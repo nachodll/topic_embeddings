@@ -1,0 +1,6 @@
+__pycache__/*
+.tools/*
+data/*
+my_data/*
+plots/*
+.DS_Store
