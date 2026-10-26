@@ -1,0 +1,720 @@
+pair_id,topic_path_a,topic_path_b,relation,unique_users_a,unique_users_b,comments
+RP001,lifestyle/automobil/autos,lifestyle/mobilitaet/autos,taxonomy_relocation,11708,3950,automobil was replaced by mobilitaet in 2022
+RP002,lifestyle/automobil/fahrrad,lifestyle/mobilitaet/fahrrad,taxonomy_relocation,4924,1482,automobil was replaced by mobilitaet in 2022
+RP003,lifestyle/automobil/mitreden-auto,lifestyle/mobilitaet/mitreden-auto,taxonomy_relocation,9465,3000,automobil was replaced by mobilitaet in 2022
+RP004,lifestyle/automobil/tretlager,lifestyle/mobilitaet/tretlager,taxonomy_relocation,7568,2186,automobil was replaced by mobilitaet in 2022
+RP005,panorama/fluechtlinge/flucht-und-politik,international/flucht-und-politik,taxonomy_relocation,25219,6640,refugees politics was moved from panorama/fluechtlinge to international in 2021
+RP006,wissenschaft/natur/klima,wissenschaft/klima,taxonomy_relocation,10725,5291,klima was upgraded to topic2 level in 2022
+RP007,panorama/gesellschaft/koenigshauser,panorama/weltchronik/koenigshauser,taxonomy_relocation,4502,2124,royal families was moved from society to world news in 2021
+RP008,diskurs/userblogs/quizblog,diskurs/blogs/quizblog,taxonomy_relocation,3540,1863,userblogs was replaced by blogs in 2021
+RP009,diskurs/userblogs/stiftung-gurutest,diskurs/blogs/stiftung-gurutest,taxonomy_relocation,8148,6364,userblogs was replaced by blogs in 2021
+RP010,diskurs/blogs/ub-blog-politprofiling,diskurs/userblogs/ub-blog-politprofiling,taxonomy_relocation,4089,2623,userblogs was replaced by blogs in 2021
+RP011,diskurs/userblogs/ub-gegen-den-strich-denken,diskurs/blogs/ub-gegen-den-strich-denken,taxonomy_relocation,2450,1130,userblogs was replaced by blogs in 2021
+RP012,panorama/oesterreich/rechtsextremismus,inland/rechtsextremismus,taxonomy_relocation,8905,2220,far right extremism moved from panorama/oesterreich to inland; the old path last had articles in 2020 and the new path first had articles in 2022
+RP014,sport/mehrsport/schach,sport/schach,taxonomy_relocation,3405,2758,chess was promoted to topic2 in 2022
+RP015,recht/wirtschaftrecht,wirtschaft/wirtschaftrecht,taxonomy_relocation,8686,7290,business law was moved from wirtschaft to recht in 2020
+RP016,diestandard/debatte/antjeschrupp,diestandard/debatte/blogantjeschrupp,taxonomy_relocation,2921,1132,Antje Schrupp's section was renamed to blogantjeschrupp in 2021
+RP017,wirtschaft/wirtschaftspolitik/umweltundklimainderwirtschaft,wirtschaft/wirtschaftspolitik/umweltundklima,taxonomy_relocation,21579,5781,umweltundklimainderwirtschaft was renamed to umweltundklima in 2022
+RP018,diskurs/userartikel,diskurs/communityartikel,taxonomy_relocation,6204,1476,userartikel was replaced by communityartikel in 2021
+RP019,sport/fussball/euro2021,sport/fussball/euro2020,taxonomy_relocation,8918,1085,euro2020 was renamed to euro2021 in 2021 because it was posponed due to covid
+RP020,etat/tv/tvserien,etat/tv/serien,taxonomy_relocation,10221,3750,tvserien was renamed to serien in 2022
+RP021,inland/bundeslaender/ipowien,inland/bundeslaender/wienerpolitik,taxonomy_relocation,14452,5137,ipowien was replaced by wienerpolitik in 2022
+RP022,wirtschaft/unternehmen/fluglinien,wirtschaft/unternehmen/luftfahrt,taxonomy_relocation,12567,1143,airlines fluglinien was replaced by luftfahrt in 2022
+RP023,inland/sachpolitik/wehrdienst,inland/sachpolitik/heer-zivildienst,taxonomy_relocation,21334,3100,wehrdienst was replaced by heer-zivildienst in 2022
+RP024,lifestyle/familie/familieundrecht,recht/blog-rechte-in-der-familie,taxonomy_relocation,2137,1370,family law coverage moved from lifestyle/familie/familieundrecht to recht/blog-rechte-in-der-familie during 2021
+RP025,wissenschaft/raum/astronomie,wissenschaft/weltraum,taxonomy_relocation,9686,5453,"raum was replaced by weltraum at topic2 level in 2022, consolidating the former space subtopics"
+RP026,wissenschaft/raum/raumfahrt,wissenschaft/weltraum,taxonomy_relocation,6032,5453,"raum was replaced by weltraum at topic2 level in 2022, consolidating the former space subtopics"
+RP027,wissenschaft/weltraum,wissenschaft/raum/sternfahrer,taxonomy_relocation,5453,2870,"raum was replaced by weltraum at topic2 level in 2022, consolidating the former space subtopics"
+RP029,diskurs/kolumnen/winder,kultur/literatur/winder,close_theme,7686,6838,"same author, different formats"
+RP030,international/wikileaks,web/netzpolitik/wikileaks2010,close_theme,4025,1116,these two are very close
+RP031,etat/tv/serienforum,etat/tv/serienreif,close_theme,10790,5547,series
+RP032,etat/tv/serienforum,etat/tv/serien,close_theme,10790,3750,series
+RP033,etat/tv/tvserien,etat/tv/serienreif,close_theme,10221,5547,series
+RP034,etat/tv/serienreif,etat/tv/serien,close_theme,5547,3750,series
+RP035,etat/tv/serienforum,etat/tv/tvserien,close_theme,10790,10221,series
+RP036,panorama/gesellschaft/nichtrauchen,panorama/gesellschaft/suchtmittel,close_theme,12109,9716,addiction
+RP037,panorama/gesellschaft/nichtrauchen,gesundheit/krankheit/sucht,close_theme,12109,4835,addiction
+RP038,panorama/gesellschaft/nichtrauchen,gesundheit/gesundbleiben/rauchen,close_theme,12109,4725,addiction
+RP039,panorama/gesellschaft/nichtrauchen,gesundheit/gesundbleiben/alkohol,close_theme,12109,4199,addiction
+RP040,panorama/gesellschaft/nichtrauchen,panorama/gesellschaft/spielsucht,close_theme,12109,1083,addiction
+RP041,panorama/gesellschaft/suchtmittel,gesundheit/krankheit/sucht,close_theme,9716,4835,addiction
+RP042,panorama/gesellschaft/suchtmittel,gesundheit/gesundbleiben/rauchen,close_theme,9716,4725,addiction
+RP043,panorama/gesellschaft/suchtmittel,gesundheit/gesundbleiben/alkohol,close_theme,9716,4199,addiction
+RP044,panorama/gesellschaft/suchtmittel,panorama/gesellschaft/spielsucht,close_theme,9716,1083,addiction
+RP045,gesundheit/krankheit/sucht,gesundheit/gesundbleiben/rauchen,close_theme,4835,4725,adiction
+RP046,gesundheit/krankheit/sucht,gesundheit/gesundbleiben/alkohol,close_theme,4835,4199,addiction
+RP047,gesundheit/krankheit/sucht,panorama/gesellschaft/spielsucht,close_theme,4835,1083,addiction
+RP048,gesundheit/gesundbleiben/rauchen,gesundheit/gesundbleiben/alkohol,close_theme,4725,4199,addiction
+RP049,gesundheit/gesundbleiben/rauchen,panorama/gesellschaft/spielsucht,close_theme,4725,1083,addiction
+RP050,gesundheit/gesundbleiben/alkohol,panorama/gesellschaft/spielsucht,close_theme,4199,1083,addiction
+RP051,wissenschaft/wissensblogs/pseudowissenschaften,gesundheit/gesundbleiben/parawissenschaften,close_theme,4530,3377,pseudoscience
+RP052,wissenschaft/wissensblogs/pseudowissenschaften,gesundheit/gesundbleiben/bloggutestudienschlechtestudien,close_theme,4530,2233,pseudoscience
+RP053,wissenschaft/wissensblogs/pseudowissenschaften,gesundheit/therapieundmedikamente/alternativmedizin,close_theme,4530,2220,pseudoscience
+RP054,gesundheit/gesundbleiben/parawissenschaften,gesundheit/gesundbleiben/bloggutestudienschlechtestudien,close_theme,3377,2233,pseudoscience
+RP055,gesundheit/gesundbleiben/parawissenschaften,gesundheit/therapieundmedikamente/alternativmedizin,close_theme,3377,2220,pseudoscience
+RP056,gesundheit/gesundbleiben/bloggutestudienschlechtestudien,gesundheit/therapieundmedikamente/alternativmedizin,close_theme,2233,2220,pseudoscience
+RP057,panorama/gesellschaft/panoramatiere,panorama/gesellschaft/wildtiere,close_theme,7418,5967,animals
+RP058,panorama/gesellschaft/panoramatiere,panorama/gesellschaft/haustiere,close_theme,7418,3611,animals
+RP059,panorama/gesellschaft/panoramatiere,panorama/gesellschaft/zoos,close_theme,7418,3265,animals
+RP060,panorama/gesellschaft/panoramatiere,panorama/gesellschaft/tierethik,close_theme,7418,3182,animals
+RP061,panorama/gesellschaft/panoramatiere,diskurs/mitreden/leben-mit-tieren,close_theme,7418,2815,animals
+RP062,panorama/gesellschaft/wildtiere,panorama/gesellschaft/haustiere,close_theme,5967,3611,animals
+RP063,panorama/gesellschaft/wildtiere,panorama/gesellschaft/zoos,close_theme,5967,3265,animals
+RP064,panorama/gesellschaft/wildtiere,panorama/gesellschaft/tierethik,close_theme,5967,3182,animals
+RP065,panorama/gesellschaft/wildtiere,diskurs/mitreden/leben-mit-tieren,close_theme,5967,2815,animals
+RP066,panorama/gesellschaft/haustiere,panorama/gesellschaft/zoos,close_theme,3611,3265,animals
+RP067,panorama/gesellschaft/haustiere,panorama/gesellschaft/tierethik,close_theme,3611,3182,animals
+RP068,panorama/gesellschaft/haustiere,diskurs/mitreden/leben-mit-tieren,close_theme,3611,2815,animals
+RP069,panorama/gesellschaft/zoos,panorama/gesellschaft/tierethik,close_theme,3265,3182,animals
+RP070,panorama/gesellschaft/zoos,diskurs/mitreden/leben-mit-tieren,close_theme,3265,2815,animals
+RP071,panorama/gesellschaft/tierethik,diskurs/mitreden/leben-mit-tieren,close_theme,3182,2815,animals
+RP072,wissenschaft/zeit/archaeologie,wissenschaft/wissensblogs/archaeologieblog,close_theme,10492,2910,archeology
+RP073,immobilien/architekturundstadt/immostadt,kultur/bildendekunst/architektur,close_theme,3919,2124,architecture
+RP074,immobilien/architekturundstadt/immostadt,immobilien/architekturundstadt/ub-architektur-und-urbanistik,close_theme,3919,1951,architecture
+RP075,immobilien/architekturundstadt/immostadt,immobilien/architekturundstadt/immobauwerke,close_theme,3919,1564,architecture
+RP076,immobilien/architekturundstadt/immostadt,immobilien/architekturundstadt/architekturpreise,close_theme,3919,1140,architecture
+RP077,kultur/bildendekunst/architektur,immobilien/architekturundstadt/ub-architektur-und-urbanistik,close_theme,2124,1951,architecture
+RP078,kultur/bildendekunst/architektur,immobilien/architekturundstadt/immobauwerke,close_theme,2124,1564,architecture
+RP079,kultur/bildendekunst/architektur,immobilien/architekturundstadt/architekturpreise,close_theme,2124,1140,architecture
+RP080,immobilien/architekturundstadt/ub-architektur-und-urbanistik,immobilien/architekturundstadt/immobauwerke,close_theme,1951,1564,architecture
+RP081,immobilien/architekturundstadt/ub-architektur-und-urbanistik,immobilien/architekturundstadt/architekturpreise,close_theme,1951,1140,architecture
+RP082,immobilien/architekturundstadt/immobauwerke,immobilien/architekturundstadt/architekturpreise,close_theme,1564,1140,architecture
+RP083,wirtschaft/unternehmen/fluglinien,panorama/weltchronik/flugkatastrophen,close_theme,12567,7849,airlines
+RP084,wirtschaft/unternehmen/fluglinien,diskurs/blogs/blog-luftraum,close_theme,12567,1450,airlines
+RP085,panorama/weltchronik/flugkatastrophen,diskurs/blogs/blog-luftraum,close_theme,7849,1450,airlines
+RP086,panorama/weltchronik/flugkatastrophen,wirtschaft/unternehmen/luftfahrt,close_theme,7849,1143,airlines
+RP087,diskurs/blogs/blog-luftraum,wirtschaft/unternehmen/luftfahrt,close_theme,1450,1143,airlines
+RP088,international/europa/brexit,wirtschaft/finanzen/brexitwirtschaft,close_theme,13376,4478,brexit
+RP089,kultur/buehne/burgtheater,kultur/kulturpolitik/burgtheaterintern,close_theme,1638,1410,burgtheater
+RP090,recht/wirtschaftrecht,karriere/service/arbeitrecht,close_theme,8686,5554,law
+RP091,wirtschaft/wirtschaftrecht,karriere/service/arbeitrecht,close_theme,7290,5554,law
+RP092,lifestyle/automobil/autos,lifestyle/automobil/rondomobil,close_theme,11708,3026,cars
+RP093,lifestyle/automobil/autos,lifestyle/automobil/steuerfrau,close_theme,11708,1688,cars
+RP094,lifestyle/automobil/autos,lifestyle/automobil/wasmichbewegt,close_theme,11708,1248,cars
+RP095,lifestyle/automobil/autos,lifestyle/automobil/autoreport,close_theme,11708,1158,cars
+RP096,lifestyle/automobil/autos,lifestyle/automobil/rueckspiegel,close_theme,11708,1096,cars
+RP097,wirtschaft/unternehmen/automobilwirtschaft,lifestyle/automobil/autos,close_theme,17635,11708,cars
+RP098,wirtschaft/unternehmen/automobilwirtschaft,lifestyle/automobil/mitreden-auto,close_theme,17635,9465,cars
+RP099,wirtschaft/unternehmen/automobilwirtschaft,lifestyle/automobil/umweltundtechnik,close_theme,17635,6286,cars
+RP100,wirtschaft/unternehmen/automobilwirtschaft,panorama/oesterreich/autofahren,close_theme,17635,5245,cars
+RP101,wirtschaft/unternehmen/automobilwirtschaft,lifestyle/mobilitaet/autos,close_theme,17635,3950,cars
+RP102,wirtschaft/unternehmen/automobilwirtschaft,lifestyle/mobilitaet/mitreden-auto,close_theme,17635,3000,cars
+RP103,wirtschaft/unternehmen/automobilwirtschaft,zukunft/alternative-antriebe,close_theme,17635,1715,cars
+RP104,lifestyle/automobil/autos,lifestyle/automobil/mitreden-auto,close_theme,11708,9465,cars
+RP105,lifestyle/automobil/autos,lifestyle/automobil/umweltundtechnik,close_theme,11708,6286,cars
+RP106,lifestyle/automobil/autos,panorama/oesterreich/autofahren,close_theme,11708,5245,cars
+RP107,lifestyle/automobil/autos,lifestyle/mobilitaet/mitreden-auto,close_theme,11708,3000,cars
+RP108,lifestyle/automobil/autos,zukunft/alternative-antriebe,close_theme,11708,1715,cars
+RP109,lifestyle/automobil/mitreden-auto,lifestyle/automobil/umweltundtechnik,close_theme,9465,6286,cars
+RP110,lifestyle/automobil/mitreden-auto,panorama/oesterreich/autofahren,close_theme,9465,5245,cars
+RP111,lifestyle/automobil/mitreden-auto,lifestyle/mobilitaet/autos,close_theme,9465,3950,cars
+RP112,lifestyle/automobil/mitreden-auto,zukunft/alternative-antriebe,close_theme,9465,1715,cars
+RP113,lifestyle/automobil/umweltundtechnik,panorama/oesterreich/autofahren,close_theme,6286,5245,cars
+RP114,lifestyle/automobil/umweltundtechnik,lifestyle/mobilitaet/autos,close_theme,6286,3950,cars
+RP115,lifestyle/automobil/umweltundtechnik,lifestyle/mobilitaet/mitreden-auto,close_theme,6286,3000,cars
+RP116,lifestyle/automobil/umweltundtechnik,zukunft/alternative-antriebe,close_theme,6286,1715,cars
+RP117,panorama/oesterreich/autofahren,lifestyle/mobilitaet/autos,close_theme,5245,3950,cars
+RP118,panorama/oesterreich/autofahren,lifestyle/mobilitaet/mitreden-auto,close_theme,5245,3000,cars
+RP119,panorama/oesterreich/autofahren,zukunft/alternative-antriebe,close_theme,5245,1715,cars
+RP120,lifestyle/mobilitaet/autos,lifestyle/mobilitaet/mitreden-auto,close_theme,3950,3000,cars
+RP121,lifestyle/mobilitaet/autos,zukunft/alternative-antriebe,close_theme,3950,1715,cars
+RP122,lifestyle/mobilitaet/mitreden-auto,zukunft/alternative-antriebe,close_theme,3000,1715,cars
+RP123,wirtschaft/finanzen/notenbanken,wirtschaft/finanzen/nationalbank,close_theme,8751,5261,banks
+RP124,wirtschaft/finanzen/notenbanken,wirtschaft/finanzen/ezb,close_theme,8751,4895,banks
+RP125,wirtschaft/finanzen/nationalbank,wirtschaft/finanzen/ezb,close_theme,5261,4895,banks
+RP126,lifestyle/familie/baby,gesundheit/familiegesundheit/kinderjugend,close_theme,5059,4694,kids
+RP127,lifestyle/familie/baby,gesundheit/familiegesundheit/schwangerschaftkinderwunsch,close_theme,5059,3540,kids
+RP128,lifestyle/familie/baby,lifestyle/familie/kindergesundheit,close_theme,5059,1545,kids
+RP129,lifestyle/familie/baby,gesundheit/familiegesundheit/babygesundheit,close_theme,5059,1456,kids
+RP130,gesundheit/familiegesundheit/kinderjugend,gesundheit/familiegesundheit/schwangerschaftkinderwunsch,close_theme,4694,3540,kids
+RP131,gesundheit/familiegesundheit/kinderjugend,lifestyle/familie/kindergesundheit,close_theme,4694,1545,kids
+RP132,gesundheit/familiegesundheit/kinderjugend,gesundheit/familiegesundheit/babygesundheit,close_theme,4694,1456,kids
+RP133,gesundheit/familiegesundheit/schwangerschaftkinderwunsch,lifestyle/familie/kindergesundheit,close_theme,3540,1545,kids
+RP134,gesundheit/familiegesundheit/schwangerschaftkinderwunsch,gesundheit/familiegesundheit/babygesundheit,close_theme,3540,1456,kids
+RP135,lifestyle/familie/kindergesundheit,gesundheit/familiegesundheit/babygesundheit,close_theme,1545,1456,kids
+RP136,wirtschaft/wirtschaftspolitik/umweltundklimainderwirtschaft,wissenschaft/natur/klima,close_theme,21579,10725,environment
+RP137,wirtschaft/wirtschaftspolitik/umweltundklimainderwirtschaft,panorama/oekologie/klimawandel,close_theme,21579,6284,environment
+RP138,wirtschaft/wirtschaftspolitik/umweltundklimainderwirtschaft,inland/sachpolitik/umweltpolitik,close_theme,21579,5872,environment
+RP139,wirtschaft/wirtschaftspolitik/umweltundklimainderwirtschaft,wissenschaft/klima,close_theme,21579,5291,environment
+RP140,wirtschaft/wirtschaftspolitik/umweltundklimainderwirtschaft,wirtschaft/wirtschaftspolitik/weltklimakonferenz,close_theme,21579,2485,environment
+RP141,wirtschaft/wirtschaftspolitik/umweltundklimainderwirtschaft,zukunft/ub-blog-klima-in-bewegung,close_theme,21579,1463,environment
+RP142,wissenschaft/natur/klima,panorama/oekologie/klimawandel,close_theme,10725,6284,environment
+RP143,wissenschaft/natur/klima,inland/sachpolitik/umweltpolitik,close_theme,10725,5872,environment
+RP144,wissenschaft/natur/klima,wirtschaft/wirtschaftspolitik/umweltundklima,close_theme,10725,5781,environment
+RP145,wissenschaft/natur/klima,wirtschaft/wirtschaftspolitik/weltklimakonferenz,close_theme,10725,2485,environment
+RP146,wissenschaft/natur/klima,zukunft/ub-blog-klima-in-bewegung,close_theme,10725,1463,environment
+RP147,panorama/oekologie/klimawandel,inland/sachpolitik/umweltpolitik,close_theme,6284,5872,environment
+RP148,panorama/oekologie/klimawandel,wirtschaft/wirtschaftspolitik/umweltundklima,close_theme,6284,5781,environment
+RP149,panorama/oekologie/klimawandel,wissenschaft/klima,close_theme,6284,5291,environment
+RP150,panorama/oekologie/klimawandel,wirtschaft/wirtschaftspolitik/weltklimakonferenz,close_theme,6284,2485,environment
+RP151,panorama/oekologie/klimawandel,zukunft/ub-blog-klima-in-bewegung,close_theme,6284,1463,environment
+RP152,inland/sachpolitik/umweltpolitik,wirtschaft/wirtschaftspolitik/umweltundklima,close_theme,5872,5781,environment
+RP153,inland/sachpolitik/umweltpolitik,wissenschaft/klima,close_theme,5872,5291,environment
+RP154,inland/sachpolitik/umweltpolitik,wirtschaft/wirtschaftspolitik/weltklimakonferenz,close_theme,5872,2485,environment
+RP155,inland/sachpolitik/umweltpolitik,zukunft/ub-blog-klima-in-bewegung,close_theme,5872,1463,environment
+RP156,wirtschaft/wirtschaftspolitik/umweltundklima,wissenschaft/klima,close_theme,5781,5291,environment
+RP157,wirtschaft/wirtschaftspolitik/umweltundklima,wirtschaft/wirtschaftspolitik/weltklimakonferenz,close_theme,5781,2485,environment
+RP158,wirtschaft/wirtschaftspolitik/umweltundklima,zukunft/ub-blog-klima-in-bewegung,close_theme,5781,1463,environment
+RP159,wissenschaft/klima,wirtschaft/wirtschaftspolitik/weltklimakonferenz,close_theme,5291,2485,environment
+RP160,wissenschaft/klima,zukunft/ub-blog-klima-in-bewegung,close_theme,5291,1463,environment
+RP161,wirtschaft/wirtschaftspolitik/weltklimakonferenz,zukunft/ub-blog-klima-in-bewegung,close_theme,2485,1463,environment
+RP162,immobilien/immogewerbe/immomarket,immobilien/immogewerbe/immoprojekte,close_theme,4223,1352,real state
+RP163,immobilien/immogewerbe/immomarket,immobilien/immogewerbe/immodeals,close_theme,4223,1264,real state
+RP164,immobilien/immogewerbe/immomarket,immobilien/immogewerbe/immowirtschaft,close_theme,4223,1140,real state
+RP165,immobilien/immogewerbe/immoprojekte,immobilien/immogewerbe/immodeals,close_theme,1352,1264,real state
+RP166,immobilien/immogewerbe/immoprojekte,immobilien/immogewerbe/immowirtschaft,close_theme,1352,1140,real state
+RP167,immobilien/immogewerbe/immodeals,immobilien/immogewerbe/immowirtschaft,close_theme,1264,1140,real state
+RP168,diskurs/debatten/userkommentare,diskurs/mitreden/montagsfrage,close_theme,20497,9890,discussion
+RP169,diskurs/debatten/userkommentare,diskurs/mitreden/umfragedestages,close_theme,20497,9627,discussion
+RP170,diskurs/mitreden/montagsfrage,diskurs/mitreden/umfragedestages,close_theme,9890,9627,discussion
+RP172,panorama/oekologie/naturschutz,wissenschaft/natur/bioinvasoren,close_theme,3195,2265,biodiversity
+RP173,panorama/oekologie/naturschutz,panorama/oekologie/weltmeere,close_theme,3195,1518,biodiversity
+RP174,wissenschaft/natur/bioinvasoren,panorama/oekologie/weltmeere,close_theme,2265,1518,biodiversity
+RP175,inland/coronapolitik,inland/bildung/corona,close_theme,25238,10118,covid
+RP176,inland/coronapolitik,panorama/coronavirus/querdenker-coronaleugner,close_theme,25238,9356,covid
+RP177,inland/coronapolitik,video/coronafrage,close_theme,25238,4727,covid
+RP178,inland/coronapolitik,wissenschaft/coronafachrat,close_theme,25238,2567,covid
+RP179,inland/coronapolitik,panorama/coronavirus/schwerpunktzukunftcorona,close_theme,25238,1140,covid
+RP180,inland/coronapolitik,panorama/coronavirus/freiheit,close_theme,25238,1130,covid
+RP181,inland/bildung/corona,panorama/coronavirus/querdenker-coronaleugner,close_theme,10118,9356,covid
+RP182,inland/bildung/corona,video/coronafrage,close_theme,10118,4727,covid
+RP183,inland/bildung/corona,wissenschaft/coronafachrat,close_theme,10118,2567,covid
+RP184,inland/bildung/corona,panorama/coronavirus/schwerpunktzukunftcorona,close_theme,10118,1140,covid
+RP185,inland/bildung/corona,panorama/coronavirus/freiheit,close_theme,10118,1130,covid
+RP186,panorama/coronavirus/querdenker-coronaleugner,video/coronafrage,close_theme,9356,4727,covid
+RP187,panorama/coronavirus/querdenker-coronaleugner,wissenschaft/coronafachrat,close_theme,9356,2567,covid
+RP188,panorama/coronavirus/querdenker-coronaleugner,panorama/coronavirus/schwerpunktzukunftcorona,close_theme,9356,1140,covid
+RP189,panorama/coronavirus/querdenker-coronaleugner,panorama/coronavirus/freiheit,close_theme,9356,1130,covid
+RP190,video/coronafrage,wissenschaft/coronafachrat,close_theme,4727,2567,covid
+RP191,video/coronafrage,panorama/coronavirus/schwerpunktzukunftcorona,close_theme,4727,1140,covid
+RP192,video/coronafrage,panorama/coronavirus/freiheit,close_theme,4727,1130,covid
+RP193,wissenschaft/coronafachrat,panorama/coronavirus/schwerpunktzukunftcorona,close_theme,2567,1140,covid
+RP194,wissenschaft/coronafachrat,panorama/coronavirus/freiheit,close_theme,2567,1130,covid
+RP195,panorama/coronavirus/schwerpunktzukunftcorona,panorama/coronavirus/freiheit,close_theme,1140,1130,covid
+RP196,lifestyle/automobil/tretlager,lifestyle/automobil/fahrrad,close_theme,7568,4924,cycling
+RP197,lifestyle/automobil/tretlager,sport/mehrsport/radsport,close_theme,7568,4768,cycling
+RP198,lifestyle/automobil/tretlager,panorama/oesterreich/radfahren,close_theme,7568,3657,cycling
+RP199,lifestyle/automobil/tretlager,lifestyle/automobil/radkasten,close_theme,7568,3210,cycling
+RP200,lifestyle/automobil/tretlager,lifestyle/mobilitaet/fahrrad,close_theme,7568,1482,cycling
+RP201,lifestyle/automobil/fahrrad,sport/mehrsport/radsport,close_theme,4924,4768,cycling
+RP202,lifestyle/automobil/fahrrad,panorama/oesterreich/radfahren,close_theme,4924,3657,cycling
+RP203,lifestyle/automobil/fahrrad,lifestyle/automobil/radkasten,close_theme,4924,3210,cycling
+RP204,lifestyle/automobil/fahrrad,lifestyle/mobilitaet/tretlager,close_theme,4924,2186,cycling
+RP205,sport/mehrsport/radsport,panorama/oesterreich/radfahren,close_theme,4768,3657,cycling
+RP206,sport/mehrsport/radsport,lifestyle/automobil/radkasten,close_theme,4768,3210,cycling
+RP207,sport/mehrsport/radsport,lifestyle/mobilitaet/tretlager,close_theme,4768,2186,cycling
+RP208,sport/mehrsport/radsport,lifestyle/mobilitaet/fahrrad,close_theme,4768,1482,cycling
+RP209,panorama/oesterreich/radfahren,lifestyle/automobil/radkasten,close_theme,3657,3210,cycling
+RP210,panorama/oesterreich/radfahren,lifestyle/mobilitaet/tretlager,close_theme,3657,2186,cycling
+RP211,panorama/oesterreich/radfahren,lifestyle/mobilitaet/fahrrad,close_theme,3657,1482,cycling
+RP212,lifestyle/automobil/radkasten,lifestyle/mobilitaet/tretlager,close_theme,3210,2186,cycling
+RP213,lifestyle/automobil/radkasten,lifestyle/mobilitaet/fahrrad,close_theme,3210,1482,cycling
+RP214,lifestyle/mobilitaet/tretlager,lifestyle/mobilitaet/fahrrad,close_theme,2186,1482,cycling
+RP215,inland/sachpolitik/wehrdienst,international/ruestung,close_theme,21334,6774,army
+RP216,inland/sachpolitik/wehrdienst,inland/eurofighter,close_theme,21334,6444,army
+RP217,inland/sachpolitik/wehrdienst,international/nato,close_theme,21334,6330,army
+RP218,international/ruestung,inland/eurofighter,close_theme,6774,6444,army
+RP219,international/ruestung,international/nato,close_theme,6774,6330,army
+RP220,international/ruestung,inland/sachpolitik/heer-zivildienst,close_theme,6774,3100,army
+RP221,inland/eurofighter,international/nato,close_theme,6444,6330,army
+RP222,inland/eurofighter,inland/sachpolitik/heer-zivildienst,close_theme,6444,3100,army
+RP223,international/nato,inland/sachpolitik/heer-zivildienst,close_theme,6330,3100,army
+RP224,inland/sachpolitik/ipoeu,international/eu/europapolitik,close_theme,11953,11061,european union
+RP225,inland/sachpolitik/ipoeu,international/europaszukunft,close_theme,11953,3324,european union
+RP226,inland/sachpolitik/ipoeu,international/eu/euwahl2019,close_theme,11953,3090,european union
+RP227,inland/sachpolitik/ipoeu,international/eu/euvorsitz,close_theme,11953,2443,european union
+RP228,inland/sachpolitik/ipoeu,international/eu/euerweiterung,close_theme,11953,2401,european union
+RP229,inland/sachpolitik/ipoeu,international/eu/eukommission,close_theme,11953,2286,european union
+RP230,inland/sachpolitik/ipoeu,inland/sachpolitik/euwahlgrafiken,close_theme,11953,1510,european union
+RP231,international/eu/europapolitik,international/europaszukunft,close_theme,11061,3324,european union
+RP232,international/eu/europapolitik,international/eu/euwahl2019,close_theme,11061,3090,european union
+RP233,international/eu/europapolitik,international/eu/euvorsitz,close_theme,11061,2443,european union
+RP234,international/eu/europapolitik,international/eu/euerweiterung,close_theme,11061,2401,european union
+RP235,international/eu/europapolitik,international/eu/eukommission,close_theme,11061,2286,european union
+RP236,international/eu/europapolitik,inland/sachpolitik/euwahlgrafiken,close_theme,11061,1510,european union
+RP237,international/europaszukunft,international/eu/euwahl2019,close_theme,3324,3090,european union
+RP238,international/europaszukunft,international/eu/euvorsitz,close_theme,3324,2443,european union
+RP239,international/europaszukunft,international/eu/euerweiterung,close_theme,3324,2401,european union
+RP240,international/europaszukunft,international/eu/eukommission,close_theme,3324,2286,european union
+RP241,international/europaszukunft,inland/sachpolitik/euwahlgrafiken,close_theme,3324,1510,european union
+RP242,international/eu/euwahl2019,international/eu/euvorsitz,close_theme,3090,2443,european union
+RP243,international/eu/euwahl2019,international/eu/euerweiterung,close_theme,3090,2401,european union
+RP244,international/eu/euwahl2019,international/eu/eukommission,close_theme,3090,2286,european union
+RP245,international/eu/euwahl2019,inland/sachpolitik/euwahlgrafiken,close_theme,3090,1510,european union
+RP246,international/eu/euvorsitz,international/eu/euerweiterung,close_theme,2443,2401,european union
+RP247,international/eu/euvorsitz,international/eu/eukommission,close_theme,2443,2286,european union
+RP248,international/eu/euvorsitz,inland/sachpolitik/euwahlgrafiken,close_theme,2443,1510,european union
+RP249,international/eu/euerweiterung,international/eu/eukommission,close_theme,2401,2286,european union
+RP250,international/eu/euerweiterung,inland/sachpolitik/euwahlgrafiken,close_theme,2401,1510,european union
+RP251,international/eu/eukommission,inland/sachpolitik/euwahlgrafiken,close_theme,2286,1510,european union
+RP252,inland/bildung/bildungsforum,karriere/job/weiterbildung,close_theme,9747,4796,education
+RP253,inland/bildung/bildungsforum,inland/bildung/ub-blog-nachhilfe,close_theme,9747,1369,education
+RP254,karriere/job/weiterbildung,inland/bildung/ub-blog-nachhilfe,close_theme,4796,1369,education
+RP255,wirtschaft/wirtschaftspolitik/arbeitsmarkt,karriere/job/arbeitswelten,close_theme,29132,11381,jobs
+RP256,wirtschaft/wirtschaftspolitik/arbeitsmarkt,karriere/job/digitalisierung,close_theme,29132,6318,jobs
+RP257,wirtschaft/wirtschaftspolitik/arbeitsmarkt,karriere/zukunftarbeit,close_theme,29132,2653,jobs
+RP258,karriere/job/arbeitswelten,karriere/job/digitalisierung,close_theme,11381,6318,jobs
+RP259,karriere/job/arbeitswelten,karriere/zukunftarbeit,close_theme,11381,2653,jobs
+RP260,karriere/job/digitalisierung,karriere/zukunftarbeit,close_theme,6318,2653,jobs
+RP261,wirtschaft/wirtschaftspolitik/energiemarkt,panorama/oekologie/atomenergie,close_theme,19720,3101,energy
+RP262,wirtschaft/wirtschaftspolitik/energiemarkt,panorama/oekologie/erneuerbare-energie,close_theme,19720,1557,energy
+RP263,wirtschaft/wirtschaftspolitik/energiemarkt,immobilien/bauenwohnen/immoenergie,close_theme,19720,1434,energy
+RP264,panorama/oekologie/atomenergie,panorama/oekologie/erneuerbare-energie,close_theme,3101,1557,energy
+RP265,panorama/oekologie/atomenergie,immobilien/bauenwohnen/immoenergie,close_theme,3101,1434,energy
+RP266,panorama/oekologie/erneuerbare-energie,immobilien/bauenwohnen/immoenergie,close_theme,1557,1434,energy
+RP267,gesundheit/gesundbleiben/umweltmedizin,panorama/oekologie/luftqualitaet,close_theme,4548,2673,pollution
+RP268,gesundheit/gesundbleiben/umweltmedizin,panorama/oekologie/hcb,close_theme,4548,1230,pollution
+RP269,panorama/oekologie/luftqualitaet,panorama/oekologie/hcb,close_theme,2673,1230,pollution
+RP270,sport/fussball/euro2021,sport/fussball/euro2020qualifikation,close_theme,8918,1728,eurocup
+RP271,sport/fussball/euro2020qualifikation,sport/fussball/euro2020,close_theme,1728,1085,eurocup
+RP272,lifestyle/familie/erziehungsforum,lifestyle/familie/kind,close_theme,15014,10076,parenting
+RP273,lifestyle/familie/erziehungsforum,lifestyle/familie/familienrat,close_theme,15014,3901,parenting
+RP274,lifestyle/familie/erziehungsforum,lifestyle/familie/jesperjuul,close_theme,15014,3771,parenting
+RP275,lifestyle/familie/erziehungsforum,lifestyle/familie/elternblog,close_theme,15014,3556,parenting
+RP276,lifestyle/familie/erziehungsforum,lifestyle/familie/familienblog,close_theme,15014,1640,parenting
+RP277,lifestyle/familie/erziehungsforum,lifestyle/familie/familieanders,close_theme,15014,1186,parenting
+RP278,lifestyle/familie/erziehungsforum,lifestyle/familie/ub-digitaler-familienalltag,close_theme,15014,1083,parenting
+RP279,lifestyle/familie/kind,lifestyle/familie/familienrat,close_theme,10076,3901,parenting
+RP280,lifestyle/familie/kind,lifestyle/familie/jesperjuul,close_theme,10076,3771,parenting
+RP281,lifestyle/familie/kind,lifestyle/familie/elternblog,close_theme,10076,3556,parenting
+RP282,lifestyle/familie/kind,lifestyle/familie/familienblog,close_theme,10076,1640,parenting
+RP283,lifestyle/familie/kind,lifestyle/familie/familieanders,close_theme,10076,1186,parenting
+RP284,lifestyle/familie/kind,lifestyle/familie/ub-digitaler-familienalltag,close_theme,10076,1083,parenting
+RP285,lifestyle/familie/familienrat,lifestyle/familie/jesperjuul,close_theme,3901,3771,parenting
+RP286,lifestyle/familie/familienrat,lifestyle/familie/elternblog,close_theme,3901,3556,parenting
+RP287,lifestyle/familie/familienrat,lifestyle/familie/familienblog,close_theme,3901,1640,parenting
+RP288,lifestyle/familie/familienrat,lifestyle/familie/familieanders,close_theme,3901,1186,parenting
+RP289,lifestyle/familie/familienrat,lifestyle/familie/ub-digitaler-familienalltag,close_theme,3901,1083,parenting
+RP290,lifestyle/familie/jesperjuul,lifestyle/familie/elternblog,close_theme,3771,3556,parenting
+RP291,lifestyle/familie/jesperjuul,lifestyle/familie/familienblog,close_theme,3771,1640,parenting
+RP292,lifestyle/familie/jesperjuul,lifestyle/familie/familieanders,close_theme,3771,1186,parenting
+RP293,lifestyle/familie/jesperjuul,lifestyle/familie/ub-digitaler-familienalltag,close_theme,3771,1083,parenting
+RP294,lifestyle/familie/elternblog,lifestyle/familie/familienblog,close_theme,3556,1640,parenting
+RP295,lifestyle/familie/elternblog,lifestyle/familie/familieanders,close_theme,3556,1186,parenting
+RP296,lifestyle/familie/elternblog,lifestyle/familie/ub-digitaler-familienalltag,close_theme,3556,1083,parenting
+RP297,lifestyle/familie/familienblog,lifestyle/familie/familieanders,close_theme,1640,1186,parenting
+RP298,lifestyle/familie/familienblog,lifestyle/familie/ub-digitaler-familienalltag,close_theme,1640,1083,parenting
+RP299,lifestyle/familie/familieanders,lifestyle/familie/ub-digitaler-familienalltag,close_theme,1186,1083,parenting
+RP300,lifestyle/modebeauty/derletzteschrei,lifestyle/modebeauty/kosmetik,close_theme,11197,3484,beauty and cosmetics
+RP301,lifestyle/modebeauty/derletzteschrei,diestandard/alltag/schoenheit,close_theme,11197,3344,beauty and cosmetics
+RP302,lifestyle/modebeauty/derletzteschrei,lifestyle/modebeauty/modetrends,close_theme,11197,2355,beauty and cosmetics
+RP303,lifestyle/modebeauty/derletzteschrei,lifestyle/modebeauty/ganzschoeneprobleme,close_theme,11197,1753,beauty and cosmetics
+RP304,lifestyle/modebeauty/kosmetik,diestandard/alltag/schoenheit,close_theme,3484,3344,beauty and cosmetics
+RP305,lifestyle/modebeauty/kosmetik,lifestyle/modebeauty/modetrends,close_theme,3484,2355,beauty and cosmetics
+RP306,lifestyle/modebeauty/kosmetik,lifestyle/modebeauty/ganzschoeneprobleme,close_theme,3484,1753,beauty and cosmetics
+RP307,diestandard/alltag/schoenheit,lifestyle/modebeauty/modetrends,close_theme,3344,2355,beauty and cosmetics
+RP308,diestandard/alltag/schoenheit,lifestyle/modebeauty/ganzschoeneprobleme,close_theme,3344,1753,beauty and cosmetics
+RP309,lifestyle/modebeauty/modetrends,lifestyle/modebeauty/ganzschoeneprobleme,close_theme,2355,1753,beauty and cosmetics
+RP310,lifestyle/modebeauty/modeschauen,lifestyle/modebeauty/modedesigner,close_theme,2815,2233,beauty and cosmetics
+RP311,lifestyle/modebeauty/modeschauen,lifestyle/modebeauty/schauplatzmaennermode,close_theme,2815,1171,beauty and cosmetics
+RP312,lifestyle/modebeauty/modedesigner,lifestyle/modebeauty/schauplatzmaennermode,close_theme,2233,1171,beauty and cosmetics
+RP313,kultur/film/filmforum,kultur/film/filmkritik,close_theme,14107,10638,films
+RP314,kultur/film/filmforum,kultur/film/oscar,close_theme,14107,2923,films
+RP315,kultur/film/filmkritik,kultur/film/oscar,close_theme,10638,2923,films
+RP316,lifestyle/essentrinken/genussforum,lifestyle/essentrinken/grussausderkueche,close_theme,15787,8638,food
+RP317,lifestyle/essentrinken/genussforum,lifestyle/essentrinken/lokaleundkoeche,close_theme,15787,3332,food
+RP318,lifestyle/essentrinken/genussforum,lifestyle/essentrinken/lokaleschmecks,close_theme,15787,2398,food
+RP319,lifestyle/essentrinken/genussforum,lifestyle/essentrinken/stranigkehrtein,close_theme,15787,2272,food
+RP320,lifestyle/essentrinken/grussausderkueche,lifestyle/essentrinken/lokaleundkoeche,close_theme,8638,3332,food
+RP321,lifestyle/essentrinken/grussausderkueche,lifestyle/essentrinken/lokaleschmecks,close_theme,8638,2398,food
+RP322,lifestyle/essentrinken/grussausderkueche,lifestyle/essentrinken/stranigkehrtein,close_theme,8638,2272,food
+RP323,lifestyle/essentrinken/lokaleundkoeche,lifestyle/essentrinken/lokaleschmecks,close_theme,3332,2398,food
+RP324,lifestyle/essentrinken/lokaleundkoeche,lifestyle/essentrinken/stranigkehrtein,close_theme,3332,2272,food
+RP325,lifestyle/essentrinken/lokaleschmecks,lifestyle/essentrinken/stranigkehrtein,close_theme,2398,2272,food
+RP326,sport/fussball/championsleague,sport/fussball/europaleague,close_theme,14650,9741,european football leagues
+RP327,sport/fussball/championsleague,sport/fussball/superleague,close_theme,14650,2640,european football leagues
+RP328,sport/fussball/championsleague,sport/fussball/conferenceleague,close_theme,14650,2082,european football leagues
+RP329,sport/fussball/europaleague,sport/fussball/superleague,close_theme,9741,2640,european football leagues
+RP330,sport/fussball/europaleague,sport/fussball/conferenceleague,close_theme,9741,2082,european football leagues
+RP331,sport/fussball/superleague,sport/fussball/conferenceleague,close_theme,2640,2082,european football leagues
+RP332,sport/fussball/wm2022,sport/fussball/wm2018,close_theme,10168,8515,world cups
+RP333,web/games/gametalk,web/games/gamesrezensionen,close_theme,6701,6353,videogames
+RP334,web/games/gametalk,web/games/wirspielen,close_theme,6701,2238,videogames
+RP335,web/games/gametalk,web/games/bestofgames,close_theme,6701,1529,videogames
+RP336,web/games/gamesrezensionen,web/games/wirspielen,close_theme,6353,2238,videogames
+RP337,web/games/gamesrezensionen,web/games/bestofgames,close_theme,6353,1529,videogames
+RP338,web/games/wirspielen,web/games/bestofgames,close_theme,2238,1529,videogames
+RP339,panorama/gesellschaft/homosexuellenrechte,diestandard/geschlechterpolitik/trans,close_theme,7925,2478,lgbti
+RP340,panorama/gesellschaft/homosexuellenrechte,diestandard/geschlechterpolitik/lesben-schwule,close_theme,7925,2082,lgbti
+RP341,panorama/gesellschaft/homosexuellenrechte,diskurs/mitreden/lgbt,close_theme,7925,1697,lgbti
+RP342,diestandard/geschlechterpolitik/trans,diestandard/geschlechterpolitik/lesben-schwule,close_theme,2478,2082,lgbti
+RP343,diestandard/geschlechterpolitik/trans,diskurs/mitreden/lgbt,close_theme,2478,1697,lgbti
+RP344,diestandard/geschlechterpolitik/lesben-schwule,diskurs/mitreden/lgbt,close_theme,2082,1697,lgbti
+RP345,diestandard/geschlechterpolitik/gewaltanfrauen,diestandard/geschlechterpolitik/metoo,close_theme,8798,6479,gender based violence
+RP346,diestandard/geschlechterpolitik/gewaltanfrauen,diestandard/geschlechterpolitik/sexuellegewalt,close_theme,8798,1848,gender based violence
+RP347,diestandard/geschlechterpolitik/metoo,diestandard/geschlechterpolitik/sexuellegewalt,close_theme,6479,1848,gender based violence
+RP348,international/europa/deutschland,panorama/weltchronik/deutschlandchronik,close_theme,34147,15023,germany
+RP349,international/europa/deutschland,international/europa/deutschlandwahl,close_theme,34147,9633,germany
+RP350,international/europa/deutschland,wirtschaft/wirtschaftspolitik/deutschlandwirtschaft,close_theme,34147,3415,germany
+RP351,international/europa/deutschland,immobilien/immodeutschland,close_theme,34147,2762,germany
+RP352,web/games/gameshardware,web/innovationen/hardware,close_theme,7392,6914,tech devices
+RP353,web/games/gameshardware,web/personaltech,close_theme,7392,3976,tech devices
+RP354,web/games/gameshardware,lifestyle/designinterieur/kaufgadget,close_theme,7392,1563,tech devices
+RP355,web/innovationen/hardware,web/personaltech,close_theme,6914,3976,tech devices
+RP356,web/innovationen/hardware,lifestyle/designinterieur/kaufgadget,close_theme,6914,1563,tech devices
+RP357,web/personaltech,lifestyle/designinterieur/kaufgadget,close_theme,3976,1563,tech devices
+RP359,inland/sachpolitik/gesundheitspolitik,gesundheit/gesundheitsforum,close_theme,23449,9670,health
+RP360,inland/sachpolitik/gesundheitspolitik,gesundheit/gesundbleiben/arztundpatient,close_theme,23449,6530,health
+RP361,gesundheit/gesundheitsforum,gesundheit/gesundbleiben/arztundpatient,close_theme,9670,6530,health
+RP362,immobilien/bauenwohnen/wohngespraech,lifestyle/designinterieur/dasbestestueck,close_theme,8127,2604,home interiors
+RP363,immobilien/bauenwohnen/wohngespraech,lifestyle/designinterieur/wohnendesign,close_theme,8127,1700,home interiors
+RP364,lifestyle/designinterieur/dasbestestueck,lifestyle/designinterieur/wohnendesign,close_theme,2604,1700,home interiors
+RP365,immobilien/bauenwohnen/wohneninwien,immobilien/bauenwohnen/wohnbau,close_theme,6725,5758,housing
+RP366,immobilien/bauenwohnen/wohneninwien,immobilien/wohnpolitik,close_theme,6725,3063,housing
+RP367,immobilien/bauenwohnen/wohneninwien,immobilien/bauenwohnen/wohnbauinternational,close_theme,6725,2060,housing
+RP368,immobilien/bauenwohnen/wohnbau,immobilien/wohnpolitik,close_theme,5758,3063,housing
+RP369,immobilien/bauenwohnen/wohnbau,immobilien/bauenwohnen/wohnbauinternational,close_theme,5758,2060,housing
+RP370,immobilien/wohnpolitik,immobilien/bauenwohnen/wohnbauinternational,close_theme,3063,2060,housing
+RP371,immobilien/bauenwohnen/mieten,immobilien/wohnpolitik,close_theme,7820,3063,housing and rental law
+RP372,immobilien/bauenwohnen/mieten,immobilien/immobilienservice/wohnrecht,close_theme,7820,2100,housing and rental law
+RP373,immobilien/wohnpolitik,immobilien/immobilienservice/wohnrecht,close_theme,3063,2100,housing and rental law
+RP374,panorama/fluechtlinge/fluechtlinge-in-oesterreich,inland/sachpolitik/integrationpolitik,close_theme,19471,19433,integration
+RP375,panorama/fluechtlinge/fluechtlinge-in-oesterreich,panorama/gesellschaft/integrationpano,close_theme,19471,16720,integration
+RP376,panorama/fluechtlinge/fluechtlinge-in-oesterreich,inland/bildung/schuelerintegration,close_theme,19471,6704,integration
+RP377,inland/sachpolitik/integrationpolitik,panorama/gesellschaft/integrationpano,close_theme,19433,16720,integration
+RP378,inland/sachpolitik/integrationpolitik,inland/bildung/schuelerintegration,close_theme,19433,6704,integration
+RP379,panorama/gesellschaft/integrationpano,inland/bildung/schuelerintegration,close_theme,16720,6704,integration
+RP380,web/netzpolitik/debatten-im-netz,web/netzpolitik/verschwoerungen,close_theme,20106,5255,online hate
+RP381,web/netzpolitik/debatten-im-netz,inland/phaenomenhass,close_theme,20106,3540,online hate
+RP382,web/netzpolitik/verschwoerungen,inland/phaenomenhass,close_theme,5255,3540,online hate
+RP383,international/nahost/israel,international/nahost/nahostkonflikt,close_theme,13102,12126,israel occupation
+RP384,international/europa/italien,lifestyle/reisen/italien-urlaub,close_theme,18423,2129,italy
+RP385,panorama/oesterreich/jihadismus-oesterreich,inland/terroranschlag-wien,close_theme,7774,7693,terrorism
+RP386,panorama/oesterreich/jihadismus-oesterreich,international/jihadismus,close_theme,7774,7423,terrorism
+RP387,inland/terroranschlag-wien,international/jihadismus,close_theme,7693,7423,terrorism
+RP388,inland/sachpolitik/justiz,panorama/oesterreich/gerichtsreportagen,close_theme,21450,20506,justice
+RP389,international/asien/nordkorea,international/asien/koreakrise,close_theme,13595,5447,korea
+RP390,international/asien/nordkorea,international/asien/suedkorea,close_theme,13595,1739,korea
+RP391,international/asien/koreakrise,international/asien/suedkorea,close_theme,5447,1739,korea
+RP392,kultur/literatur/buchneuerscheinungen,kultur/literatur/literaturforumuser,close_theme,11628,8337,literature
+RP393,kultur/literatur/buchneuerscheinungen,kultur/literatur/literaturpreise,close_theme,11628,5097,literature
+RP394,kultur/literatur/buchneuerscheinungen,kultur/literatur/buchbranche,close_theme,11628,1291,literature
+RP395,kultur/literatur/literaturforumuser,kultur/literatur/literaturpreise,close_theme,8337,5097,literature
+RP396,kultur/literatur/literaturforumuser,kultur/literatur/buchbranche,close_theme,8337,1291,literature
+RP397,kultur/literatur/literaturpreise,kultur/literatur/buchbranche,close_theme,5097,1291,literature
+RP398,karriere/management/managementstandard,karriere/job/personalmoves,close_theme,1882,1855,management and employment
+RP399,karriere/management/managementstandard,karriere/management/attraktivearbeitgeber,close_theme,1882,1298,management and employment
+RP400,karriere/job/personalmoves,karriere/management/attraktivearbeitgeber,close_theme,1855,1298,management and employment
+RP401,etat/medien/presserat,etat/medien/regierungswerbung,close_theme,3766,3234,media oversight
+RP402,web/telekom/android,web/telekom/handy,close_theme,15050,9608,smartphones
+RP403,web/telekom/android,web/telekom/apps,close_theme,15050,7842,smartphones
+RP404,web/telekom/android,web/innovationen/phone7,close_theme,15050,3613,smartphones
+RP405,web/telekom/handy,web/telekom/apps,close_theme,9608,7842,smartphones
+RP406,web/telekom/handy,web/innovationen/phone7,close_theme,9608,3613,smartphones
+RP407,web/telekom/apps,web/innovationen/phone7,close_theme,7842,3613,smartphones
+RP408,lifestyle/automobil/motorrad,sport/motorsport/motorradwm,close_theme,3110,2029,motorcycles
+RP409,sport/mehrsport/bergsteigen,sport/mehrsport/klettern,close_theme,2890,2146,mountaineering
+RP410,kultur/musik/musikforum,kultur/musik/kritiken,close_theme,7124,6782,music
+RP411,kultur/musik/musikforum,kultur/musik/konzerte,close_theme,7124,5837,music
+RP412,kultur/musik/musikforum,kultur/musik/musikfestival,close_theme,7124,2047,music
+RP413,kultur/musik/kritiken,kultur/musik/konzerte,close_theme,6782,5837,music
+RP414,kultur/musik/kritiken,kultur/musik/musikfestival,close_theme,6782,2047,music
+RP415,kultur/musik/konzerte,kultur/musik/musikfestival,close_theme,5837,2047,music
+RP416,diskurs/kommentare/brickner,panorama/gesellschaft/bricknersblog,close_theme,14458,6483,"same author, different formats"
+RP417,diskurs/kolumnen/stajicgemischt,diskurs/kommentare/stajic,close_theme,6038,5031,"same author, different formats"
+RP418,diskurs/kommentare/prantner,international/prantnersperspektiven,close_theme,4290,1607,"same author, different formats"
+RP419,sport/fussball/nationalteam,sport/fussball/oefbnachwuchs,close_theme,17015,2855,national team football
+RP420,sport/fussball/nationalteam,sport/fussball/nationsleague,close_theme,17015,2045,national team football
+RP421,sport/fussball/oefbnachwuchs,sport/fussball/nationsleague,close_theme,2855,2045,national team football
+RP422,gesundheit/gesundbleiben/gesunde-ernaehrung,gesundheit/krankheit/adipositas0,close_theme,13087,2894,nutrition
+RP423,gesundheit/gesundbleiben/gesunde-ernaehrung,lifestyle/essbar-rezepte/vegetarische-rezepte,close_theme,13087,2820,nutrition
+RP424,gesundheit/gesundbleiben/gesunde-ernaehrung,lifestyle/essentrinken/ressort-365vegan,close_theme,13087,2393,nutrition
+RP425,gesundheit/krankheit/adipositas0,lifestyle/essbar-rezepte/vegetarische-rezepte,close_theme,2894,2820,nutrition
+RP426,gesundheit/krankheit/adipositas0,lifestyle/essentrinken/ressort-365vegan,close_theme,2894,2393,nutrition
+RP427,lifestyle/essbar-rezepte/vegetarische-rezepte,lifestyle/essentrinken/ressort-365vegan,close_theme,2820,2393,nutrition
+RP428,etat/orf/rundfunkgebuehr,etat/orf/orfwahl2021,close_theme,5069,3893,orf
+RP429,kultur/nachrufe/nachrufe2021,kultur/nachrufe/nachrufe2020,close_theme,1443,1210,"obituaries, different years"
+RP430,sport/mehrsport/olympia2021,sport/mehrsport/olympia2016,close_theme,6498,4225,"olympics, different years"
+RP431,wirtschaft/wirtschaftspolitik/einkommen,wirtschaft/wirtschaftspolitik/verteilung1,close_theme,12855,7489,income and wages
+RP432,wirtschaft/wirtschaftspolitik/einkommen,karriere/service/gehalt,close_theme,12855,7068,income and wages
+RP433,wirtschaft/wirtschaftspolitik/einkommen,diestandard/arbeitswelt/einkommensschere,close_theme,12855,2628,income and wages
+RP434,wirtschaft/wirtschaftspolitik/einkommen,karriere/service/gehaltkonkret,close_theme,12855,1671,income and wages
+RP435,wirtschaft/wirtschaftspolitik/verteilung1,karriere/service/gehalt,close_theme,7489,7068,income and wages
+RP436,wirtschaft/wirtschaftspolitik/verteilung1,diestandard/arbeitswelt/einkommensschere,close_theme,7489,2628,income and wages
+RP437,wirtschaft/wirtschaftspolitik/verteilung1,karriere/service/gehaltkonkret,close_theme,7489,1671,income and wages
+RP438,karriere/service/gehalt,diestandard/arbeitswelt/einkommensschere,close_theme,7068,2628,income and wages
+RP439,karriere/service/gehalt,karriere/service/gehaltkonkret,close_theme,7068,1671,income and wages
+RP440,diestandard/arbeitswelt/einkommensschere,karriere/service/gehaltkonkret,close_theme,2628,1671,income and wages
+RP441,inland/sachpolitik/pensionen,lifestyle/familie/generationen,close_theme,12249,7545,ageing and generations
+RP442,inland/sachpolitik/pensionen,panorama/gesellschaft/demografischerwandel,close_theme,12249,4236,ageing and generations
+RP443,lifestyle/familie/generationen,panorama/gesellschaft/demografischerwandel,close_theme,7545,4236,ageing and generations
+RP444,wirtschaft/finanzen/geld,wirtschaft/finanzen/portfoliowirtschaft,close_theme,21630,7896,personal finance
+RP445,wirtschaft/finanzen/geld,wirtschaft/finanzen/katsching,close_theme,21630,2101,personal finance
+RP446,wirtschaft/finanzen/geld,diskurs/blogs/blog-geldanlage-und-oekonomie,close_theme,21630,1676,personal finance
+RP447,wirtschaft/finanzen/portfoliowirtschaft,wirtschaft/finanzen/katsching,close_theme,7896,2101,personal finance
+RP448,wirtschaft/finanzen/portfoliowirtschaft,diskurs/blogs/blog-geldanlage-und-oekonomie,close_theme,7896,1676,personal finance
+RP449,wirtschaft/finanzen/katsching,diskurs/blogs/blog-geldanlage-und-oekonomie,close_theme,2101,1676,personal finance
+RP450,wissenschaft/technik/cernexperimente,wissenschaft/raum/gravitationswellen,close_theme,2122,1733,physics and astronomy
+RP451,wissenschaft/technik/cernexperimente,wissenschaft/raum/stephen-hawking,close_theme,2122,1127,physics and astronomy
+RP452,wissenschaft/raum/gravitationswellen,wissenschaft/raum/stephen-hawking,close_theme,1733,1127,physics and astronomy
+RP453,inland/sachpolitik/sozialpolitik,panorama/gesellschaft/armut-pano,close_theme,20005,5501,poverty
+RP454,inland/sachpolitik/sozialpolitik,panorama/gesellschaft/mindestsicherung,close_theme,20005,3514,poverty
+RP455,inland/sachpolitik/sozialpolitik,panorama/gesellschaft/soziales-pano,close_theme,20005,1931,poverty
+RP456,panorama/gesellschaft/armut-pano,panorama/gesellschaft/mindestsicherung,close_theme,5501,3514,poverty
+RP457,panorama/gesellschaft/armut-pano,panorama/gesellschaft/soziales-pano,close_theme,5501,1931,poverty
+RP458,panorama/gesellschaft/mindestsicherung,panorama/gesellschaft/soziales-pano,close_theme,3514,1931,poverty
+RP459,diestandard/geschlechterpolitik/prostitution,panorama/gesellschaft/prostitution-,close_theme,1889,1511,prostitution
+RP460,wissenschaft/mensch/psychologie,gesundheit/krankheit/psychischeerkrankungen,close_theme,7010,5210,mental health
+RP461,wissenschaft/mensch/psychologie,gesundheit/gesundbleiben/menschlichepsyche,close_theme,7010,3120,mental health
+RP462,wissenschaft/mensch/psychologie,gesundheit/krankheit/depression,close_theme,7010,1352,mental health
+RP463,gesundheit/krankheit/psychischeerkrankungen,gesundheit/gesundbleiben/menschlichepsyche,close_theme,5210,3120,mental health
+RP464,gesundheit/krankheit/psychischeerkrankungen,gesundheit/krankheit/depression,close_theme,5210,1352,mental health
+RP465,gesundheit/gesundbleiben/menschlichepsyche,gesundheit/krankheit/depression,close_theme,3120,1352,mental health
+RP466,wirtschaft/unternehmen/verkehrundkosten,panorama/wien/verkehr-wien,close_theme,18695,13874,public transport
+RP467,wirtschaft/unternehmen/verkehrundkosten,wirtschaft/unternehmen/bahn,close_theme,18695,8159,public transport
+RP468,wirtschaft/unternehmen/verkehrundkosten,wirtschaft/unternehmen/oebb,close_theme,18695,7645,public transport
+RP469,wirtschaft/unternehmen/verkehrundkosten,panorama/oesterreich/oeffentlicher-verkehr,close_theme,18695,5583,public transport
+RP470,panorama/wien/verkehr-wien,wirtschaft/unternehmen/bahn,close_theme,13874,8159,public transport
+RP471,panorama/wien/verkehr-wien,wirtschaft/unternehmen/oebb,close_theme,13874,7645,public transport
+RP472,panorama/wien/verkehr-wien,panorama/oesterreich/oeffentlicher-verkehr,close_theme,13874,5583,public transport
+RP473,wirtschaft/unternehmen/bahn,wirtschaft/unternehmen/oebb,close_theme,8159,7645,public transport
+RP474,wirtschaft/unternehmen/bahn,panorama/oesterreich/oeffentlicher-verkehr,close_theme,8159,5583,public transport
+RP475,wirtschaft/unternehmen/oebb,panorama/oesterreich/oeffentlicher-verkehr,close_theme,7645,5583,public transport
+RP476,diskurs/userblogs/quizblog,web/webmix/webquiz,close_theme,3540,2636,quiz
+RP477,web/webmix/webquiz,diskurs/blogs/quizblog,close_theme,2636,1863,quiz
+RP478,lifestyle/essbar-rezepte/foodblog-a-modo-mio,lifestyle/essentrinken/kochbuch,close_theme,3579,3123,recipes and cooking
+RP479,lifestyle/essbar-rezepte/foodblog-a-modo-mio,lifestyle/essentrinken/pascaleneuens,close_theme,3579,1280,recipes and cooking
+RP480,lifestyle/essbar-rezepte/foodblog-a-modo-mio,lifestyle/essentrinken/unseredreibestenrezepte,close_theme,3579,1274,recipes and cooking
+RP481,lifestyle/essentrinken/kochbuch,lifestyle/essentrinken/pascaleneuens,close_theme,3123,1280,recipes and cooking
+RP482,lifestyle/essentrinken/kochbuch,lifestyle/essentrinken/unseredreibestenrezepte,close_theme,3123,1274,recipes and cooking
+RP483,lifestyle/essentrinken/pascaleneuens,lifestyle/essentrinken/unseredreibestenrezepte,close_theme,1280,1274,recipes and cooking
+RP484,etat/tv/servustv,etat/medien/redbullmediahouse,close_theme,6778,1508,red bull media
+RP485,panorama/fluechtlinge/flucht-und-politik,panorama/fluechtlinge/fluechtlinge-in-oesterreich,close_theme,25219,19471,refugees and migration
+RP486,panorama/fluechtlinge/flucht-und-politik,panorama/fluechtlinge/fluchtgeschichten,close_theme,25219,6048,refugees and migration
+RP487,panorama/fluechtlinge/flucht-und-politik,panorama/fluechtlinge/serie-aufderflucht,close_theme,25219,2328,refugees and migration
+RP488,panorama/fluechtlinge/flucht-und-politik,panorama/gesellschaft/migrationsreport,close_theme,25219,2310,refugees and migration
+RP489,panorama/fluechtlinge/flucht-und-politik,wirtschaft/wirtschaftundmigration,close_theme,25219,1711,refugees and migration
+RP490,panorama/fluechtlinge/fluechtlinge-in-oesterreich,international/flucht-und-politik,close_theme,19471,6640,refugees and migration
+RP491,panorama/fluechtlinge/fluechtlinge-in-oesterreich,panorama/fluechtlinge/fluchtgeschichten,close_theme,19471,6048,refugees and migration
+RP492,panorama/fluechtlinge/fluechtlinge-in-oesterreich,panorama/fluechtlinge/serie-aufderflucht,close_theme,19471,2328,refugees and migration
+RP493,panorama/fluechtlinge/fluechtlinge-in-oesterreich,panorama/gesellschaft/migrationsreport,close_theme,19471,2310,refugees and migration
+RP494,panorama/fluechtlinge/fluechtlinge-in-oesterreich,wirtschaft/wirtschaftundmigration,close_theme,19471,1711,refugees and migration
+RP495,international/flucht-und-politik,panorama/fluechtlinge/fluchtgeschichten,close_theme,6640,6048,refugees and migration
+RP496,international/flucht-und-politik,panorama/fluechtlinge/serie-aufderflucht,close_theme,6640,2328,refugees and migration
+RP497,international/flucht-und-politik,panorama/gesellschaft/migrationsreport,close_theme,6640,2310,refugees and migration
+RP498,international/flucht-und-politik,wirtschaft/wirtschaftundmigration,close_theme,6640,1711,refugees and migration
+RP499,panorama/fluechtlinge/fluchtgeschichten,panorama/fluechtlinge/serie-aufderflucht,close_theme,6048,2328,refugees and migration
+RP500,panorama/fluechtlinge/fluchtgeschichten,panorama/gesellschaft/migrationsreport,close_theme,6048,2310,refugees and migration
+RP501,panorama/fluechtlinge/fluchtgeschichten,wirtschaft/wirtschaftundmigration,close_theme,6048,1711,refugees and migration
+RP502,panorama/fluechtlinge/serie-aufderflucht,panorama/gesellschaft/migrationsreport,close_theme,2328,2310,refugees and migration
+RP503,panorama/fluechtlinge/serie-aufderflucht,wirtschaft/wirtschaftundmigration,close_theme,2328,1711,refugees and migration
+RP504,panorama/gesellschaft/migrationsreport,wirtschaft/wirtschaftundmigration,close_theme,2310,1711,refugees and migration
+RP505,lifestyle/beziehungen/liebesforum,lifestyle/familie/partnerschaft,close_theme,13601,6320,relationships and sexuality
+RP506,lifestyle/beziehungen/liebesforum,gesundheit/gesundbleiben/sexualitaet,close_theme,13601,5404,relationships and sexuality
+RP507,lifestyle/beziehungen/liebesforum,lifestyle/beziehungen/lustprinzip,close_theme,13601,4026,relationships and sexuality
+RP508,lifestyle/beziehungen/liebesforum,lifestyle/beziehungen/blog-es-ist-nie-zu-spaet-fuer-guten-sex,close_theme,13601,2494,relationships and sexuality
+RP509,lifestyle/beziehungen/liebesforum,diestandard/alltag/sex,close_theme,13601,2112,relationships and sexuality
+RP510,lifestyle/familie/partnerschaft,gesundheit/gesundbleiben/sexualitaet,close_theme,6320,5404,relationships and sexuality
+RP511,lifestyle/familie/partnerschaft,lifestyle/beziehungen/lustprinzip,close_theme,6320,4026,relationships and sexuality
+RP512,lifestyle/familie/partnerschaft,lifestyle/beziehungen/blog-es-ist-nie-zu-spaet-fuer-guten-sex,close_theme,6320,2494,relationships and sexuality
+RP513,lifestyle/familie/partnerschaft,diestandard/alltag/sex,close_theme,6320,2112,relationships and sexuality
+RP514,gesundheit/gesundbleiben/sexualitaet,lifestyle/beziehungen/lustprinzip,close_theme,5404,4026,relationships and sexuality
+RP515,gesundheit/gesundbleiben/sexualitaet,lifestyle/beziehungen/blog-es-ist-nie-zu-spaet-fuer-guten-sex,close_theme,5404,2494,relationships and sexuality
+RP516,gesundheit/gesundbleiben/sexualitaet,diestandard/alltag/sex,close_theme,5404,2112,relationships and sexuality
+RP517,lifestyle/beziehungen/lustprinzip,lifestyle/beziehungen/blog-es-ist-nie-zu-spaet-fuer-guten-sex,close_theme,4026,2494,relationships and sexuality
+RP518,lifestyle/beziehungen/lustprinzip,diestandard/alltag/sex,close_theme,4026,2112,relationships and sexuality
+RP519,lifestyle/beziehungen/blog-es-ist-nie-zu-spaet-fuer-guten-sex,diestandard/alltag/sex,close_theme,2494,2112,relationships and sexuality
+RP520,inland/sachpolitik/religion-und-politik,panorama/gesellschaft/religionsdiskussion,close_theme,15923,9114,religion
+RP521,inland/sachpolitik/religion-und-politik,panorama/gesellschaft/religionswissenschaftsblog,close_theme,15923,3307,religion
+RP522,panorama/gesellschaft/religionsdiskussion,panorama/gesellschaft/religionswissenschaftsblog,close_theme,9114,3307,religion
+RP523,wirtschaft/unternehmen/handel,web/itbusiness/webhandel,close_theme,25284,15995,retail
+RP524,web/games/gamesvongestern,web/innovationen/retro,close_theme,3418,1603,retro
+RP525,inland/ipoextrem,inland/akademikerball,close_theme,18250,9545,right-wing extremism
+RP526,inland/ipoextrem,international/europa/rechterterror,close_theme,18250,8921,right-wing extremism
+RP527,inland/ipoextrem,panorama/oesterreich/rechtsextremismus,close_theme,18250,8905,right-wing extremism
+RP528,inland/ipoextrem,panorama/gesellschaft/pegida-oesterreich,close_theme,18250,2502,right-wing extremism
+RP529,inland/akademikerball,international/europa/rechterterror,close_theme,9545,8921,right-wing extremism
+RP530,inland/akademikerball,panorama/oesterreich/rechtsextremismus,close_theme,9545,8905,right-wing extremism
+RP531,inland/akademikerball,panorama/gesellschaft/pegida-oesterreich,close_theme,9545,2502,right-wing extremism
+RP532,inland/akademikerball,inland/rechtsextremismus,close_theme,9545,2220,right-wing extremism
+RP533,international/europa/rechterterror,panorama/oesterreich/rechtsextremismus,close_theme,8921,8905,right-wing extremism
+RP534,international/europa/rechterterror,panorama/gesellschaft/pegida-oesterreich,close_theme,8921,2502,right-wing extremism
+RP535,international/europa/rechterterror,inland/rechtsextremismus,close_theme,8921,2220,right-wing extremism
+RP536,panorama/oesterreich/rechtsextremismus,panorama/gesellschaft/pegida-oesterreich,close_theme,8905,2502,right-wing extremism
+RP537,panorama/gesellschaft/pegida-oesterreich,inland/rechtsextremismus,close_theme,2502,2220,right-wing extremism
+RP538,panorama/oesterreich/verkehrssache,panorama/oesterreich/autofahren,close_theme,17000,5245,road transport
+RP539,panorama/oesterreich/verkehrssache,wirtschaft/unternehmen/taxidienstuber,close_theme,17000,3546,road transport
+RP540,panorama/oesterreich/verkehrssache,wirtschaft/unternehmen/transportextra,close_theme,17000,2676,road transport
+RP541,panorama/oesterreich/autofahren,wirtschaft/unternehmen/taxidienstuber,close_theme,5245,3546,road transport
+RP542,panorama/oesterreich/autofahren,wirtschaft/unternehmen/transportextra,close_theme,5245,2676,road transport
+RP543,wirtschaft/unternehmen/taxidienstuber,wirtschaft/unternehmen/transportextra,close_theme,3546,2676,road transport
+RP544,gesundheit/gesundbleiben/bewegungfitness,lifestyle/mehrlifestyle/rotterennt,close_theme,7677,6785,running and fitness
+RP545,gesundheit/gesundbleiben/bewegungfitness,sport/mehrsport/leichtathletik,close_theme,7677,4287,running and fitness
+RP546,gesundheit/gesundbleiben/bewegungfitness,sport/mehrsport/marathon,close_theme,7677,3519,running and fitness
+RP547,lifestyle/mehrlifestyle/rotterennt,sport/mehrsport/leichtathletik,close_theme,6785,4287,running and fitness
+RP548,lifestyle/mehrlifestyle/rotterennt,sport/mehrsport/marathon,close_theme,6785,3519,running and fitness
+RP549,sport/mehrsport/leichtathletik,sport/mehrsport/marathon,close_theme,4287,3519,running and fitness
+RP550,inland/bildung/schule,inland/bildung/schulpolitik,close_theme,23522,15357,school
+RP551,inland/bildung/schule,inland/bildung/ub-schulgschichtn,close_theme,23522,2940,school
+RP552,inland/bildung/schule,inland/bildung/klassenzimmer,close_theme,23522,2101,school
+RP553,inland/bildung/schule,inland/bildung/ub-bildungsthemen,close_theme,23522,1095,school
+RP554,inland/bildung/schulpolitik,inland/bildung/ub-schulgschichtn,close_theme,15357,2940,school
+RP555,inland/bildung/schulpolitik,inland/bildung/klassenzimmer,close_theme,15357,2101,school
+RP556,inland/bildung/schulpolitik,inland/bildung/ub-bildungsthemen,close_theme,15357,1095,school
+RP557,inland/bildung/ub-schulgschichtn,inland/bildung/klassenzimmer,close_theme,2940,2101,school
+RP558,inland/bildung/ub-schulgschichtn,inland/bildung/ub-bildungsthemen,close_theme,2940,1095,school
+RP559,inland/bildung/klassenzimmer,inland/bildung/ub-bildungsthemen,close_theme,2101,1095,school
+RP560,inland/bildung/schule,lifestyle/familie/kind,close_theme,23522,10076,school and childcare
+RP561,inland/bildung/schule,inland/bildung/vorschule-kindergarten,close_theme,23522,4707,school and childcare
+RP562,inland/bildung/schule,panorama/gesellschaft/schule-und-kindergarten,close_theme,23522,4010,school and childcare
+RP563,lifestyle/familie/kind,inland/bildung/vorschule-kindergarten,close_theme,10076,4707,school and childcare
+RP564,lifestyle/familie/kind,panorama/gesellschaft/schule-und-kindergarten,close_theme,10076,4010,school and childcare
+RP565,inland/bildung/vorschule-kindergarten,panorama/gesellschaft/schule-und-kindergarten,close_theme,4707,4010,school and childcare
+RP567,inland/sachpolitik/sicherheit,panorama/oesterreich/polizei-,close_theme,17850,13045,security
+RP568,inland/sachpolitik/sicherheit,inland/sachpolitik/bvt,close_theme,17850,7760,security
+RP569,panorama/oesterreich/polizei-,inland/sachpolitik/bvt,close_theme,13045,7760,security
+RP570,wissenschaft/raum/astronomie,wissenschaft/raum/raumfahrt,close_theme,9686,6032,space
+RP571,wissenschaft/raum/astronomie,wissenschaft/raum/sternfahrer,close_theme,9686,2870,space
+RP572,wissenschaft/raum/raumfahrt,wissenschaft/raum/sternfahrer,close_theme,6032,2870,space
+RP573,web/itbusiness/startupweb,wirtschaft/unternehmen/startupwirtschaft,close_theme,7544,6858,startups
+RP574,web/innovationen/streaming,etat/tv/tvserien,close_theme,12546,10221,streaming and series
+RP575,web/innovationen/streaming,etat/tv/serien,close_theme,12546,3750,streaming and series
+RP576,web/innovationen/streaming,etat/internet/netflix,close_theme,12546,1912,streaming and series
+RP577,etat/tv/tvserien,etat/internet/netflix,close_theme,10221,1912,streaming and series
+RP578,etat/tv/serien,etat/internet/netflix,close_theme,3750,1912,streaming and series
+RP579,web/netzpolitik/itueberwachung,international/abhoerskandal,close_theme,12278,7475,surveillance and privacy
+RP580,web/netzpolitik/itueberwachung,web/netzpolitik/privatsphaere,close_theme,12278,5445,surveillance and privacy
+RP581,web/netzpolitik/itueberwachung,web/netzpolitik/bundestrojaner,close_theme,12278,3635,surveillance and privacy
+RP582,web/netzpolitik/itueberwachung,web/netzpolitik/vorratsdatenspeicherung,close_theme,12278,2710,surveillance and privacy
+RP583,international/abhoerskandal,web/netzpolitik/privatsphaere,close_theme,7475,5445,surveillance and privacy
+RP584,international/abhoerskandal,web/netzpolitik/bundestrojaner,close_theme,7475,3635,surveillance and privacy
+RP585,international/abhoerskandal,web/netzpolitik/vorratsdatenspeicherung,close_theme,7475,2710,surveillance and privacy
+RP586,web/netzpolitik/privatsphaere,web/netzpolitik/bundestrojaner,close_theme,5445,3635,surveillance and privacy
+RP587,web/netzpolitik/privatsphaere,web/netzpolitik/vorratsdatenspeicherung,close_theme,5445,2710,surveillance and privacy
+RP588,web/netzpolitik/bundestrojaner,web/netzpolitik/vorratsdatenspeicherung,close_theme,3635,2710,surveillance and privacy
+RP589,etat/tv/puls4,etat/tv/prosiebensat1puls4,close_theme,2858,1327,puls4
+RP590,wirtschaft/wirtschaftspolitik/steuer,inland/parlament/steuerreform,close_theme,16912,12208,taxes
+RP591,web/telekom/mobilfunker,web/telekom/provider,close_theme,13901,5904,telecommunications
+RP592,web/telekom/mobilfunker,wirtschaft/unternehmen/telekomaustria,close_theme,13901,4062,telecommunications
+RP593,web/telekom/mobilfunker,web/telekom/telekompolitik,close_theme,13901,2002,telecommunications
+RP594,web/telekom/provider,wirtschaft/unternehmen/telekomaustria,close_theme,5904,4062,telecommunications
+RP595,web/telekom/provider,web/telekom/telekompolitik,close_theme,5904,2002,telecommunications
+RP596,wirtschaft/unternehmen/telekomaustria,web/telekom/telekompolitik,close_theme,4062,2002,telecommunications
+RP597,wirtschaft/wirtschaftspolitik/welthandel,wirtschaft/wirtschaftspolitik/aussenwirtschaft,close_theme,13629,11207,foreign trade
+RP598,lifestyle/reisen/reiseaktuell,wirtschaft/unternehmen/tourismus,close_theme,26631,13369,travel and tourism
+RP599,lifestyle/reisen/reiseaktuell,lifestyle/reisen/reiseforum,close_theme,26631,9300,travel and tourism
+RP600,lifestyle/reisen/reiseaktuell,lifestyle/reisen/leserreise,close_theme,26631,2037,travel and tourism
+RP601,wirtschaft/unternehmen/tourismus,lifestyle/reisen/reiseforum,close_theme,13369,9300,travel and tourism
+RP602,wirtschaft/unternehmen/tourismus,lifestyle/reisen/leserreise,close_theme,13369,2037,travel and tourism
+RP603,lifestyle/reisen/reiseforum,lifestyle/reisen/leserreise,close_theme,9300,2037,travel and tourism
+RP604,international/amerika/usa,international/amerika/uswahlkampf,close_theme,39512,15459,usa
+RP605,international/amerika/usa,wirtschaft/wirtschaftspolitik/uswirtschaft,close_theme,39512,6160,usa
+RP606,inland/bildung/uni,inland/bildung/unipolitik,close_theme,17550,6958,university education
+RP607,inland/bildung/uni,inland/bildung/hochschule,close_theme,17550,4583,university education
+RP608,inland/bildung/uni,inland/bildung/unialltag,close_theme,17550,3075,university education
+RP609,inland/bildung/uni,inland/bildung/unifh,close_theme,17550,2620,university education
+RP610,inland/bildung/unipolitik,inland/bildung/hochschule,close_theme,6958,4583,university education
+RP611,inland/bildung/unipolitik,inland/bildung/unialltag,close_theme,6958,3075,university education
+RP612,inland/bildung/unipolitik,inland/bildung/unifh,close_theme,6958,2620,university education
+RP613,inland/bildung/hochschule,inland/bildung/unialltag,close_theme,4583,3075,university education
+RP614,inland/bildung/hochschule,inland/bildung/unifh,close_theme,4583,2620,university education
+RP615,inland/bildung/unialltag,inland/bildung/unifh,close_theme,3075,2620,university education
+RP616,gesundheit/krankheit/infektionen,gesundheit/gesundbleiben/impfungen,close_theme,15461,10063,infections and vaccination
+RP617,gesundheit/krankheit/infektionen,gesundheit/krankheit/influenza,close_theme,15461,1692,infections and vaccination
+RP618,gesundheit/krankheit/infektionen,gesundheit/gesundbleiben/grippeimpfung,close_theme,15461,1253,infections and vaccination
+RP619,gesundheit/krankheit/infektionen,gesundheit/gesundbleiben/fsme-zecken,close_theme,15461,1112,infections and vaccination
+RP620,gesundheit/gesundbleiben/impfungen,gesundheit/krankheit/influenza,close_theme,10063,1692,infections and vaccination
+RP621,gesundheit/gesundbleiben/impfungen,gesundheit/gesundbleiben/grippeimpfung,close_theme,10063,1253,infections and vaccination
+RP622,gesundheit/gesundbleiben/impfungen,gesundheit/gesundbleiben/fsme-zecken,close_theme,10063,1112,infections and vaccination
+RP623,gesundheit/krankheit/influenza,gesundheit/gesundbleiben/grippeimpfung,close_theme,1692,1253,infections and vaccination
+RP624,gesundheit/krankheit/influenza,gesundheit/gesundbleiben/fsme-zecken,close_theme,1692,1112,infections and vaccination
+RP625,gesundheit/gesundbleiben/grippeimpfung,gesundheit/gesundbleiben/fsme-zecken,close_theme,1253,1112,infections and vaccination
+RP626,inland/bundeslaender/ipowien,panorama/wien/wien-wahl-2020,close_theme,14452,12728,vienna politics
+RP627,inland/bundeslaender/ipowien,inland/bundeslaender/wien,close_theme,14452,11739,vienna politics
+RP628,panorama/wien/wien-wahl-2020,inland/bundeslaender/wien,close_theme,12728,11739,vienna politics
+RP629,panorama/wien/wien-wahl-2020,inland/bundeslaender/wienerpolitik,close_theme,12728,5137,vienna politics
+RP630,inland/bundeslaender/wien,inland/bundeslaender/wienerpolitik,close_theme,11739,5137,vienna politics
+RP631,panorama/wien/wieninworten,panorama/wien/blog-wienschauen,close_theme,2452,1846,vienna city life
+RP632,panorama/wien/wieninworten,panorama/wien/historisches-wien,close_theme,2452,1642,vienna city life
+RP633,panorama/wien/wieninworten,panorama/wien/fotoblog-ganz-wien,close_theme,2452,1457,vienna city life
+RP634,panorama/wien/wieninworten,panorama/wien/wienspricht,close_theme,2452,1186,vienna city life
+RP635,panorama/wien/blog-wienschauen,panorama/wien/historisches-wien,close_theme,1846,1642,vienna city life
+RP636,panorama/wien/blog-wienschauen,panorama/wien/fotoblog-ganz-wien,close_theme,1846,1457,vienna city life
+RP637,panorama/wien/blog-wienschauen,panorama/wien/wienspricht,close_theme,1846,1186,vienna city life
+RP638,panorama/wien/historisches-wien,panorama/wien/fotoblog-ganz-wien,close_theme,1642,1457,vienna city life
+RP639,panorama/wien/historisches-wien,panorama/wien/wienspricht,close_theme,1642,1186,vienna city life
+RP640,panorama/wien/fotoblog-ganz-wien,panorama/wien/wienspricht,close_theme,1457,1186,vienna city life
+RP641,lifestyle/essentrinken/lokalewien1,lifestyle/essentrinken/lokalewien2,close_theme,3088,1931,vienna restaurants
+RP642,lifestyle/essentrinken/lokalewien1,lifestyle/essentrinken/lokalewien7,close_theme,3088,1382,vienna restaurants
+RP643,lifestyle/essentrinken/lokalewien1,lifestyle/essentrinken/lokalewien6,close_theme,3088,1328,vienna restaurants
+RP644,lifestyle/essentrinken/lokalewien2,lifestyle/essentrinken/lokalewien7,close_theme,1931,1382,vienna restaurants
+RP645,lifestyle/essentrinken/lokalewien2,lifestyle/essentrinken/lokalewien6,close_theme,1931,1328,vienna restaurants
+RP646,lifestyle/essentrinken/lokalewien7,lifestyle/essentrinken/lokalewien6,close_theme,1382,1328,vienna restaurants
+RP647,sport/wintersport/uebergriffe,panorama/oesterreich/missbrauch-panorama,close_theme,5564,4862,abuse
+RP648,sport/wintersport/uebergriffe,sport/wintersport/aktsailer,close_theme,5564,1857,abuse
+RP649,panorama/oesterreich/missbrauch-panorama,sport/wintersport/aktsailer,close_theme,4862,1857,abuse
+RP650,karriere/job/frauenundberuf,diestandard/arbeitswelt/einkommensschere,close_theme,5050,2628,women and work
+RP651,karriere/service/bewerbung,karriere/job/absolventen,broader_narrower,4991,2214,
+RP652,karriere/service/bewerbung,karriere/service/bewerbungsgespraech,broader_narrower,4991,1083,
+RP653,karriere/job/absolventen,karriere/service/bewerbungsgespraech,broader_narrower,2214,1083,
+RP654,sport/fussball/bundesliga,sport/fussball/rapidwien,broader_narrower,14430,9032,
+RP655,sport/fussball/bundesliga,sport/fussball/austriawien,broader_narrower,14430,7050,
+RP656,sport/fussball/bundesliga,sport/fussball/redbullsalzburg,broader_narrower,14430,5863,
+RP657,sport/fussball/bundesliga,sport/fussball/cup,broader_narrower,14430,5779,
+RP658,sport/fussball/bundesliga,sport/fussball/zweiteliga,broader_narrower,14430,4086,
+RP659,sport/fussball/bundesliga,sport/fussball/sturmgraz,broader_narrower,14430,3351,
+RP660,sport/fussball/bundesliga,sport/fussball/lask,broader_narrower,14430,2306,
+RP661,sport/fussball/bundesliga,sport/fussball/admira,broader_narrower,14430,1986,
+RP662,sport/fussball/bundesliga,sport/fussball/mattersburg,broader_narrower,14430,1492,
+RP663,sport/fussball/bundesliga,sport/fussball/stpoelten,broader_narrower,14430,1160,
+RP664,sport/fussball/bundesliga,sport/fussball/wolfsberg,broader_narrower,14430,1123,
+RP665,lifestyle/reisen/urlaub-in-oesterreich,lifestyle/reisen/urlaub-in-niederoesterreich,broader_narrower,3891,1430,
+RP666,lifestyle/reisen/urlaub-in-oesterreich,lifestyle/reisen/urlaub-in-wien,broader_narrower,3891,1196,
+RP667,sport/mehrsport/nba,sport/mehrsport/basketball,broader_narrower,3608,1640,
+RP668,gesundheit/krankheit/herzkreislauf,gesundheit/krankheit/herzinfarkt,broader_narrower,2720,1142,
+RP669,web/itbusiness/bitcoin,wirtschaft/finanzen/kryptowaehrungen,broader_narrower,10754,5585,
+RP670,web/netzpolitik/itsecurity,web/netzpolitik/privatsphaere,broader_narrower,13787,5445,
+RP671,web/netzpolitik/itsecurity,web/netzpolitik/bundestrojaner,broader_narrower,13787,3635,
+RP672,web/netzpolitik/itsecurity,web/netzpolitik/anonymous,broader_narrower,13787,1699,
+RP673,sport/mehrsport/radsport,sport/mehrsport/tourdefrance,broader_narrower,4768,3037,
+RP674,sport/mehrsport/doping,sport/wintersport/nordskiwm19doping,broader_narrower,4627,2217,
+RP675,sport/fussball/premierleague,sport/fussball/manchesterunited,broader_narrower,9024,1692,
+RP676,sport/fussball/premierleague,sport/fussball/fcchelsea,broader_narrower,9024,1172,
+RP677,sport/fussball/premierleague,sport/fussball/fa-cup,broader_narrower,9024,1170,
+RP678,panorama/oekologie/klimawandel,panorama/oekologie/umweltforum,broader_narrower,6284,4061,
+RP679,panorama/oekologie/umweltforum,panorama/oekologie/abfall,broader_narrower,4061,3670,
+RP680,panorama/oekologie/umweltforum,panorama/oekologie/naturschutz,broader_narrower,4061,3195,
+RP681,panorama/oekologie/umweltforum,panorama/oekologie/luftqualitaet,broader_narrower,4061,2673,
+RP682,panorama/oekologie/umweltforum,panorama/oekologie/erneuerbare-energie,broader_narrower,4061,1557,
+RP683,sport/fussball/europaleague,sport/fussball/europaleaguefcsalzburg,broader_narrower,9741,3254,
+RP684,sport/fussball/europaleague,sport/fussball/europaleaguerapid,broader_narrower,9741,1479,
+RP685,sport/motorsport/formel1,sport/motorsport/nikilauda,broader_narrower,14701,1648,
+RP686,international/europa/frankreich,international/europa/frankreichwahl,broader_narrower,25363,1935,
+RP687,sport/fussball/deutscheliga,sport/fussball/fcbayern,broader_narrower,11172,7864,
+RP688,sport/fussball/deutscheliga,sport/fussball/zweitedeutscheliga,broader_narrower,11172,3500,
+RP689,sport/fussball/deutscheliga,sport/fussball/dfbpokal,broader_narrower,11172,3352,
+RP690,sport/fussball/deutscheliga,sport/fussball/borussiadortmund,broader_narrower,11172,2821,
+RP691,sport/fussball/deutscheliga,sport/fussball/rasenballsport,broader_narrower,11172,2819,
+RP692,sport/fussball/deutscheliga,sport/fussball/werderbremen,broader_narrower,11172,1678,
+RP693,sport/wintersport/eishockey,sport/wintersport/nhl,broader_narrower,2656,1959,
+RP694,sport/wintersport/eishockey,sport/wintersport/eishockeyliga,broader_narrower,2656,1916,
+RP695,sport/wintersport/eishockey,sport/wintersport/eishockeywm,broader_narrower,2656,1859,
+RP696,panorama/wien/donauinselfest,kultur/musik/musikfestival,broader_narrower,2832,2047,
+RP697,kultur/musik/musikfestival,kultur/musik/frequency,broader_narrower,2047,1295,music
+RP698,kultur/musik/musikfestival,kultur/musik/novarock,broader_narrower,2047,1159,music
+RP699,kultur/buehne/oper,kultur/buehne/staatsoper,broader_narrower,1423,1327,opera
+RP700,gesundheit/gesundbleiben/gesunde-ernaehrung,gesundheit/gesundbleiben/praevention,broader_narrower,13087,3153,
+RP701,gesundheit/gesundbleiben/impfungen,gesundheit/gesundbleiben/praevention,broader_narrower,10063,3153,
+RP702,gesundheit/gesundbleiben/bewegungfitness,gesundheit/gesundbleiben/praevention,broader_narrower,7677,3153,
+RP703,gesundheit/gesundbleiben/rauchen,gesundheit/gesundbleiben/praevention,broader_narrower,4725,3153,
+RP704,sport/fussball/rapidwien,sport/fussball/europaleaguerapid,broader_narrower,9032,1479,
+RP705,sport/fussball/redbullsalzburg,sport/fussball/europaleaguefcsalzburg,broader_narrower,5863,3254,
+RP706,sport/wintersport/skisprung,sport/wintersport/vierschanzen,broader_narrower,4254,2898,
+RP707,sport/wintersport/ski,sport/wintersport/herrenweltcup,broader_narrower,10215,7781,
+RP708,sport/wintersport/ski,sport/wintersport/damenweltcup,broader_narrower,10215,6914,
+RP709,sport/wintersport/ski,sport/wintersport/streif,broader_narrower,10215,3405,
+RP710,sport/wintersport/ski,sport/wintersport/skiwm2021,broader_narrower,10215,1433,
+RP711,web/innovationen/facebook,web/innovationen/socialmedia,broader_narrower,11212,10229,
+RP712,web/innovationen/socialmedia,web/innovationen/twitter,broader_narrower,10229,3090,
+RP713,wissenschaft/raum/raumfahrt,wissenschaft/raum/rosetta,broader_narrower,6032,1680,
+RP714,wissenschaft/raum/raumfahrt,wissenschaft/raum/mondlandung,broader_narrower,6032,1657,
+RP715,sport/fussball/primeradivision,sport/fussball/fcbarcelona,broader_narrower,5926,3933,
+RP716,sport/fussball/primeradivision,sport/fussball/realmadrid,broader_narrower,5926,2974,
+RP717,kultur/buehne/theater,kultur/buehne/burgtheater,broader_narrower,5068,1638,
+RP718,kultur/buehne/theater,kultur/kulturpolitik/burgtheaterintern,broader_narrower,5068,1410,
+RP719,international/europa/tuerkei,international/europa/tuerkeiputsch,broader_narrower,23111,2547,
+RP720,international/europa/tuerkei,international/europa/tuerkeiwahl,broader_narrower,23111,1805,
+RP721,inland/bildung/uni,inland/bildung/unioeh,broader_narrower,17550,6184,
+RP722,inland/bildung/uni,inland/bildung/medizinstudium,broader_narrower,17550,2984,
+RP723,inland/bildung/uni,inland/bildung/unisoziales,broader_narrower,17550,2380,
+RP724,inland/bildung/uni,inland/bildung/unipersonal,broader_narrower,17550,2201,
