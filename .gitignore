@@ -4,3 +4,4 @@ data/*
 my_data/*
 plots/*
 .DS_Store
+output/*
