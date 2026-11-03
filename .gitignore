@@ -1,8 +1,8 @@
 __pycache__/
 .tools/*
 .DS_Store
-/data/raw/*
-/results/*
+data/raw/*
+results/*
 DATASET_DOCUMENTATION.md
 */latex/build/*
 */pdf/*
