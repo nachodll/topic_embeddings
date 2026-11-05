@@ -235,7 +235,8 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--articles', nargs='+', required=True, help='All article files (wildcards accepted)')
     parser.add_argument('--embeddings', nargs='+', required=True, help='Embedding files (wildcards accepted)')
-    parser.add_argument('--output', required=True, help='Output CSV; replaced atomically on success')
+    parser.add_argument('--output', default='data/processed/comment_embedding_means.csv',
+                        help='Output CSV; replaced atomically on success (default: %(default)s)')
     parser.add_argument('--comments-dir', help='Defaults to each embedding file directory')
     parser.add_argument('--workers', type=int, default=1, help='Worker processes (default: 1)')
     parser.add_argument('--block-mib', type=int, default=0, help='Split files into byte ranges of this size; 0 = one task per file (default)')
