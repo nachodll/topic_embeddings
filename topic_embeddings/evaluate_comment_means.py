@@ -1,0 +1,46 @@
+"""Compare pairwise topic similarities with those of mean comment embeddings."""
+
+import numpy as np
+import pandas as pd
+from scipy.stats import spearmanr
+
+
+TOPIC_COLUMNS = ["Topic_1", "Topic_2", "Topic_3"]
+
+
+def _indexed_vectors(frame, prefix):
+    """Return a DataFrame of vectors indexed by topic paths."""
+    paths = frame[TOPIC_COLUMNS].fillna("")
+    index = pd.MultiIndex.from_frame(paths)
+    if not index.is_unique:
+        raise ValueError(f"Duplicate topic paths in {prefix} coordinates.")
+    vectors = frame.filter(regex=f"^{prefix}").set_axis(index)
+    if vectors.shape[1] == 0:
+        raise ValueError(f"Expected coordinate columns starting with {prefix!r}.")
+    return vectors
+
+
+def _cosine_matrix(vectors):
+    """Return a DataFrame of pairwise cosine similarities for the given vectors."""
+    values = vectors.to_numpy(dtype=np.float64)
+    norms = np.linalg.norm(values, axis=1, keepdims=True)
+    if not np.isfinite(norms).all() or (norms == 0).any():
+        raise ValueError("Shared topics must have finite, nonzero embedding norms.")
+    unit = values / norms
+    return pd.DataFrame(unit @ unit.T, index=vectors.index, columns=vectors.index)
+
+
+def evaluate_comment_means(topics, means):
+    """Return two aligned cosine matrices (topics, means) and their Spearman rho."""
+    topic_vectors = _indexed_vectors(topics, "embedding_")
+    mean_vectors = _indexed_vectors(means, "dim_")
+    shared = topic_vectors.index.intersection(mean_vectors.index, sort=False)
+    if len(shared) < 3:
+        raise ValueError("Spearman correlation needs at least three shared topics.")
+    topic_cosines = _cosine_matrix(topic_vectors.loc[shared])
+    mean_cosines = _cosine_matrix(mean_vectors.loc[shared])
+    upper = np.triu_indices(len(shared), k=1) # upper triangle indices for strict pairs
+    scores = [matrix.to_numpy()[upper] for matrix in (topic_cosines, mean_cosines)]
+    if any(np.ptp(values) == 0 for values in scores):
+        raise ValueError("Spearman correlation is undefined for constant similarities.")
+    return topic_cosines, mean_cosines, float(spearmanr(*scores).statistic)
