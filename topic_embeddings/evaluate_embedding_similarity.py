@@ -1,4 +1,4 @@
-"""Compare pairwise topic similarities with those of mean comment embeddings."""
+"""Compare pairwise topic similarities against a reference embedding space."""
 
 import numpy as np
 import pandas as pd
@@ -30,17 +30,23 @@ def _cosine_matrix(vectors):
     return pd.DataFrame(unit @ unit.T, index=vectors.index, columns=vectors.index)
 
 
-def evaluate_comment_means(topics, means):
-    """Return two aligned cosine matrices (topics, means) and their Spearman rho."""
+def evaluate_embedding_similarity(topics, reference):
+    """Return aligned cosine matrices (topics, reference) and their Spearman rho.
+
+    Match full topic paths using embedding_* columns from topics and dim_*
+    columns from reference (e.g. comment means or pretrained topic labels).
+    Compare each unordered shared-topic pair once, excluding self-pairs.
+    The two embedding spaces may have different dimensionalities.
+    """
     topic_vectors = _indexed_vectors(topics, "embedding_")
-    mean_vectors = _indexed_vectors(means, "dim_")
-    shared = topic_vectors.index.intersection(mean_vectors.index, sort=False)
+    reference_vectors = _indexed_vectors(reference, "dim_")
+    shared = topic_vectors.index.intersection(reference_vectors.index, sort=False)
     if len(shared) < 3:
         raise ValueError("Spearman correlation needs at least three shared topics.")
     topic_cosines = _cosine_matrix(topic_vectors.loc[shared])
-    mean_cosines = _cosine_matrix(mean_vectors.loc[shared])
+    reference_cosines = _cosine_matrix(reference_vectors.loc[shared])
     upper = np.triu_indices(len(shared), k=1) # upper triangle indices for strict pairs
-    scores = [matrix.to_numpy()[upper] for matrix in (topic_cosines, mean_cosines)]
+    scores = [matrix.to_numpy()[upper] for matrix in (topic_cosines, reference_cosines)]
     if any(np.ptp(values) == 0 for values in scores):
         raise ValueError("Spearman correlation is undefined for constant similarities.")
-    return topic_cosines, mean_cosines, float(spearmanr(*scores).statistic)
+    return topic_cosines, reference_cosines, float(spearmanr(*scores).statistic)
