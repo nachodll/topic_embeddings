@@ -41,6 +41,11 @@ def run(source, output, revision_arg, requested_device, batch_size, max_seq_leng
                     max_seq_length=max_seq_length)
     print(f"All topic paths: {len(paths):,}")
 
+    # For embeddings to be reused:
+    # 1. The output CSV and metadata JSON must exist.
+    # 2. The metadata must match the current settings.
+    # 3. The saved vectors must pass validation
+    # 4. force must not be set
     reuse = False
     if not force and output.exists() and metadata_path.exists():
         metadata = json.loads(metadata_path.read_text())
@@ -70,6 +75,7 @@ def run(source, output, revision_arg, requested_device, batch_size, max_seq_leng
         dtype = (torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16) if device.startswith("cuda") else (
             torch.float16 if device == "mps" else torch.float32)
         if HF_HUB_OFFLINE:
+            # explicitly download the snapshot to avoid a network call in offline mode, set HF_HUB_OFFLINE=1 before running the script
             snapshot = Path(snapshot_download(MODEL_ID, revision=revision_arg, local_files_only=True))
             revision = snapshot.name
             model_source = str(snapshot)
@@ -81,7 +87,6 @@ def run(source, output, revision_arg, requested_device, batch_size, max_seq_leng
                                     model_kwargs={"torch_dtype": dtype})
         model.max_seq_length = max_seq_length
         texts = paths.Topic_path.tolist()
-        # Fail rather than silently truncate a topic path.
         lengths = model.tokenizer(texts, truncation=False, padding=False, return_length=True)["length"]
         if max(lengths) > max_seq_length:
             raise ValueError("Increase max_seq_length: at least one full topic path would be truncated")
