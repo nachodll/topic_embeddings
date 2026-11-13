@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Embed full topic paths with F2LLM-v2-14B for the topic-label benchmark.
+"""Embed topic labels or paths with F2LLM-v2-14B.
 
 From the repository root, run this in a GPU allocation:
     python -u scripts/topic_labels_embeddings.py --device cuda:0
@@ -19,12 +19,46 @@ import numpy as np
 import pandas as pd
 
 
-MODEL_ID = "codefuse-ai/F2LLM-v2-330M"
+MODEL_ID = "codefuse-ai/F2LLM-v2-14B"
 TOPIC_COLUMNS = ["Topic_1", "Topic_2", "Topic_3"]
 DATA_DIR = Path(__file__).resolve().parents[1] / "data" / "processed"
 
 
-def run(source, output, revision_arg, requested_device, batch_size, max_seq_length, force):
+def encode_topics(paths, model, batch_size, max_seq_length, mode, weights):
+    levels = list(paths[TOPIC_COLUMNS].itertuples(index=False, name=None))
+    if mode == "full":
+        texts = paths["Topic_path"].tolist()
+    elif mode == "last":
+        texts = [level3 or level2 or level1 for level1, level2, level3 in levels]
+    else:
+        texts = list(dict.fromkeys(label for row in levels for label in row if label))
+
+    lengths = model.tokenizer(texts, truncation=False, padding=False, return_length=True)["length"]
+    if max(lengths) > max_seq_length:
+        raise ValueError("Increase max_seq_length: at least one input would be truncated")
+    vectors = model.encode(texts, batch_size=batch_size, prompt="", normalize_embeddings=True,
+                           convert_to_numpy=True, show_progress_bar=True).astype(np.float32)
+    if mode == "weighted":
+        by_label = dict(zip(texts, vectors))
+        combined = []
+        for row in levels:
+            present = [(by_label[label], weight) for label, weight in zip(row, weights) if label]
+            label_vectors, level_weights = zip(*present)
+            combined.append(np.average(label_vectors, axis=0, weights=level_weights))
+        vectors = np.asarray(combined, dtype=np.float32)
+    return vectors
+
+
+def run(source, output, revision_arg, requested_device, batch_size, max_seq_length, force,
+        mode="last", weights=None):
+    if mode not in ("last", "full", "weighted"):
+        raise ValueError(f"Unknown embedding mode: {mode}")
+    if weights is not None and mode != "weighted":
+        raise ValueError("--weights requires --mode weighted")
+    if mode == "weighted":
+        weights = tuple(weights) if weights is not None else (1, 2, 3)
+        if len(weights) != 3 or not all(np.isfinite(w) and w > 0 for w in weights):
+            raise ValueError("Provide three finite, positive level weights")
     metadata_path = output.with_suffix(".json")
     if len({p.resolve() for p in (source, output, metadata_path)}) != 3:
         raise ValueError("Input CSV, output CSV and metadata must be distinct paths")
@@ -37,9 +71,13 @@ def run(source, output, revision_arg, requested_device, batch_size, max_seq_leng
         raise ValueError("Expected at least three nonempty topic paths")
     settings = dict(model_id=MODEL_ID, requested_revision=revision_arg,
                     source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
-                    separator=" / ", prompt="", normalize_embeddings=True,
+                    embedding_input={"last": "deepest_nonempty_label", "full": "full_path",
+                                     "weighted": "weighted_level_embeddings"}[mode],
+                    prompt="", normalize_embeddings=True,
                     max_seq_length=max_seq_length)
-    print(f"All topic paths: {len(paths):,}")
+    if mode == "weighted":
+        settings["level_weights"] = list(weights)
+    print(f"All topic paths: {len(paths):,} (mode={mode})")
 
     # For embeddings to be reused:
     # 1. The output CSV and metadata JSON must exist.
@@ -86,13 +124,7 @@ def run(source, output, revision_arg, requested_device, batch_size, max_seq_leng
         model = SentenceTransformer(model_source, revision=revision, device=device,
                                     model_kwargs={"torch_dtype": dtype})
         model.max_seq_length = max_seq_length
-        texts = paths.Topic_path.tolist()
-        lengths = model.tokenizer(texts, truncation=False, padding=False, return_length=True)["length"]
-        if max(lengths) > max_seq_length:
-            raise ValueError("Increase max_seq_length: at least one full topic path would be truncated")
-        vectors = model.encode(texts, batch_size=batch_size, prompt="",
-                               normalize_embeddings=True, convert_to_numpy=True,
-                               show_progress_bar=True).astype(np.float32)
+        vectors = encode_topics(paths, model, batch_size, max_seq_length, mode, weights)
         # Normalize in float32 as well, avoiding half-precision rounding in the export.
         vectors /= np.linalg.norm(vectors, axis=1, keepdims=True)
         if not np.isfinite(vectors).all() or not np.allclose(np.linalg.norm(vectors, axis=1), 1, atol=1e-4):
@@ -116,16 +148,25 @@ def run(source, output, revision_arg, requested_device, batch_size, max_seq_leng
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--input", type=Path, default=DATA_DIR / "topic_summary.csv")
-    parser.add_argument("--output", type=Path, default=DATA_DIR / "topic_path_embeddings.csv")
+    parser.add_argument("--output", type=Path, help="Override the mode-specific output CSV")
+    parser.add_argument("--output-dir", type=Path, default=DATA_DIR / "topic_label_embeddings",
+                        help="Parent directory for the mode-specific output folders")
     parser.add_argument("--revision", default="main", help="Hugging Face model revision or commit")
     parser.add_argument("--device", default="auto", help="Torch device, e.g. cuda:0, mps, cpu, or auto")
     parser.add_argument("--batch-size", type=int, default=1)
     parser.add_argument("--max-seq-length", type=int, default=512)
+    parser.add_argument("--mode", choices=("full", "last", "weighted"), default="weighted",
+                        help="Embed the full path, deepest available label, or weighted level vectors (default)")
+    parser.add_argument("--weights", nargs=3, type=float, metavar=("L1", "L2", "L3"),
+                        help="Positive weights for the three levels in weighted mode (default: 1 2 3)")
     parser.add_argument("--force", action="store_true", help="Recompute even if a matching export exists")
     args = parser.parse_args()
     if args.batch_size < 1 or args.max_seq_length < 1:
         parser.error("--batch-size and --max-seq-length must be positive")
-    run(args.input, args.output, args.revision, args.device, args.batch_size, args.max_seq_length, args.force)
+    folder = {"full": "full_path", "last": "leave_only", "weighted": "weighted"}[args.mode]
+    output = args.output or args.output_dir / folder / "topic_label_embeddings.csv"
+    run(args.input, output, args.revision, args.device, args.batch_size, args.max_seq_length,
+        args.force, args.mode, args.weights)
 
 
 if __name__ == "__main__":

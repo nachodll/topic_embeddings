@@ -1,0 +1,21 @@
+{
+  "settings": {
+    "model_id": "codefuse-ai/F2LLM-v2-14B",
+    "requested_revision": "main",
+    "source_sha256": "f3865070091e7965e3701d3efbd02b0dd1a372df557d698b29496920169b19be",
+    "embedding_input": "deepest_nonempty_label",
+    "prompt": "",
+    "normalize_embeddings": true,
+    "max_seq_length": 512
+  },
+  "resolved_revision": "8be6125a8acb7c6e103ae8dcd754e098a6ddc90d",
+  "topics": 2107,
+  "dimensions": 5120,
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "versions": {
+    "torch": "2.15.0+cu132",
+    "transformers": "5.22.2",
+    "sentence_transformers": "6.3.0"
+  }
+}

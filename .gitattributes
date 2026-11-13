@@ -1,0 +1,2 @@
+data/processed/topic_label_embeddings.csv filter=lfs diff=lfs merge=lfs -text
+data/processed/topic_label_embeddings/*/topic_label_embeddings.csv filter=lfs diff=lfs merge=lfs -text
